@@ -22,7 +22,7 @@ export interface domElement {
      * 
      * **Syntax**: `S(targets).removeCss(propertyName)`
     */
-    removeCss(propertyName: String): void,
+    removeCss(propertyName: keyof CSS.StandardPropertiesHyphen): void,
     /**
      * inserts nodes before the first child of node.
      * 
@@ -97,7 +97,7 @@ export interface domElement {
      * @param {Boolean} [toNumber] - determine the return value type `(string|number)`
      * 
     */
-    getStyle(property: String, toNumber = false): String | Number,
+    getStyle(property: keyof CSS.StandardPropertiesHyphen, toNumber = false): String | Number,
     /**
      * Get the style variable from DOM Root
      * 
@@ -146,7 +146,7 @@ interface AnimateOptions {
      *
      * **Initial value**: `all`
     */
-    transitionProperty?: String,
+    transitionProperty?: keyof CSS.StandardPropertiesHyphen,
     /**
      * Animation transition-timing-function
      *
@@ -170,7 +170,7 @@ interface AnimateOptions {
      *
      * **Initial value**: `none`
     */
-    clearProp?: String,
+    clearProp?: keyof CSS.StandardPropertiesHyphen,
     /**
      * Set the animated element style to display: none after cleanUp
      *

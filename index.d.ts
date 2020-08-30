@@ -1,4 +1,4 @@
-export interface StandardLonghandProperties<TLength = string | 0> {
+export interface StandardLonghandProperties<TLength = String | 0> {
   /**
    * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
    *
@@ -147,7 +147,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
    */
   animationFillMode?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -419,7 +419,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
    */
   backgroundSize?: BackgroundSizeProperty<TLength>;
   /**
-   * **Syntax**: `clip | ellipsis | <string>`
+   * **Syntax**: `clip | ellipsis | <String>`
    *
    * **Initial value**: `clip`
    */
@@ -681,7 +681,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`border-image-outset`** CSS property sets the distance by which an element's border image is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    *
@@ -709,7 +709,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    *
@@ -737,7 +737,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`border-image-width`** CSS property sets the width of an element's border image.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `1`
    *
@@ -1329,7 +1329,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
    */
   colorAdjust?: ColorAdjustProperty;
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -1488,7 +1488,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are _anonymous replaced elements._
    *
-   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?`
+   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <String> ]?`
    *
    * **Initial value**: `normal`
    *
@@ -1645,7 +1645,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -1660,7 +1660,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    *
@@ -1748,7 +1748,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    *
@@ -1791,7 +1791,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`font-size-adjust`** CSS property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
    *
-   * **Syntax**: `none | <number>`
+   * **Syntax**: `none | <Number>`
    *
    * **Initial value**: `none`
    *
@@ -1902,7 +1902,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
    */
   fontVariantLigatures?: FontVariantLigaturesProperty;
   /**
-   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers.
+   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for Numbers, fractions, and ordinal markers.
    *
    * **Syntax**: `normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]`
    *
@@ -1932,7 +1932,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`font-variation-settings`** CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.
    *
-   * **Syntax**: `normal | [ <string> <number> ]#`
+   * **Syntax**: `normal | [ <String> <Number> ]#`
    *
    * **Initial value**: `normal`
    *
@@ -2060,7 +2060,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`grid-template-areas`** CSS property specifies named grid areas.
    *
-   * **Syntax**: `none | <string>+`
+   * **Syntax**: `none | <String>+`
    *
    * **Initial value**: `none`
    *
@@ -2179,7 +2179,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The `initial-letter` CSS property sets styling for dropped, raised, and sunken initial letters.
    *
-   * **Syntax**: `normal | [ <number> <integer>? ]`
+   * **Syntax**: `normal | [ <Number> <integer>? ]`
    *
    * **Initial value**: `normal`
    *
@@ -2447,7 +2447,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`line-height`** CSS property sets the amount of space used for lines, such as in text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.
    *
-   * **Syntax**: `normal | <number> | <length> | <percentage>`
+   * **Syntax**: `normal | <Number> | <length> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -2503,7 +2503,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`list-style-type`** CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.
    *
-   * **Syntax**: `<counter-style> | <string> | none`
+   * **Syntax**: `<counter-style> | <String> | none`
    *
    * **Initial value**: `disc`
    *
@@ -2667,7 +2667,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`mask-border-outset`** CSS property specifies the distance by which an element's mask border is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    */
@@ -2683,7 +2683,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`mask-border-slice`** CSS property divides the image set by `mask-border-source` into regions. These regions are used to form the components of an element's mask border.
    *
-   * **Syntax**: `<number-percentage>{1,4} fill?`
+   * **Syntax**: `<Number-percentage>{1,4} fill?`
    *
    * **Initial value**: `0`
    */
@@ -2699,7 +2699,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`mask-border-width`** CSS property sets the width of an element's mask border.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `auto`
    */
@@ -3138,7 +3138,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
    */
   order?: GlobalsNumber;
   /**
-   * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
+   * The **`orphans`** CSS property sets the minimum Number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -3657,7 +3657,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`quotes`** CSS property sets how quotation marks appear.
    *
-   * **Syntax**: `none | auto | [ <string> <string> ]+`
+   * **Syntax**: `none | auto | [ <String> <String> ]+`
    *
    * **Initial value**: depends on user agent
    *
@@ -3699,7 +3699,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`rotate`** CSS property allows you to specify rotation transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <angle> | [ x | y | z | <number>{3} ] && <angle>`
+   * **Syntax**: `none | <angle> | [ x | y | z | <Number>{3} ] && <angle>`
    *
    * **Initial value**: `none`
    *
@@ -3776,7 +3776,7 @@ export interface StandardLonghandProperties<TLength = string | 0> {
   /**
    * The **`scale`** CSS property allows you to specify scale transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <number>{1,3}`
+   * **Syntax**: `none | <Number>{1,3}`
    *
    * **Initial value**: `none`
    *
@@ -4502,7 +4502,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    *
@@ -4557,9 +4557,9 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   textOrientation?: TextOrientationProperty;
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    *
@@ -4889,7 +4889,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   whiteSpace?: WhiteSpaceProperty;
   /**
-   * The **`widows`** CSS property sets the minimum number of lines in a block container that must be shown at the _top_ of a page, region, or column.
+   * The **`widows`** CSS property sets the minimum Number of lines in a block container that must be shown at the _top_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -5004,7 +5004,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
    *
-   * **Syntax**: `normal | reset | <number> | <percentage>`
+   * **Syntax**: `normal | reset | <Number> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -5017,7 +5017,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   zoom?: ZoomProperty;
 }
 
-export interface StandardShorthandProperties<TLength = string | 0> {
+export interface StandardShorthandProperties<TLength = String | 0> {
   /**
    * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
    *
@@ -5401,7 +5401,7 @@ export interface StandardShorthandProperties<TLength = string | 0> {
   /**
    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
    *
-   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
+   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <String> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
    *
    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
    * | :----: | :-----: | :------: | :----: | :-: |
@@ -5613,9 +5613,9 @@ export interface StandardShorthandProperties<TLength = string | 0> {
   transition?: TransitionProperty;
 }
 
-export interface StandardProperties<TLength = string | 0> extends StandardLonghandProperties<TLength>, StandardShorthandProperties<TLength> {}
+export interface StandardProperties<TLength = String | 0> extends StandardLonghandProperties<TLength>, StandardShorthandProperties<TLength> {}
 
-export interface VendorLonghandProperties<TLength = string | 0> {
+export interface VendorLonghandProperties<TLength = String | 0> {
   /**
    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
    *
@@ -5649,7 +5649,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   MozAnimationFillMode?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -5777,7 +5777,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   MozBoxSizing?: BoxSizingProperty;
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -5859,7 +5859,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    */
@@ -6097,7 +6097,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   MozWindowShadow?: MozWindowShadowProperty;
   /**
-   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
+   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a String indicating whether the object represents a keyboard shortcut.
    *
    * **Syntax**: `false | true`
    *
@@ -6171,9 +6171,9 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The `-ms-filter` CSS property is a Microsoft extension that sets or retrieves the filter or collection of filters applied to an object.
    *
-   * **Syntax**: `<string>`
+   * **Syntax**: `<String>`
    *
-   * **Initial value**: "" (the empty string)
+   * **Initial value**: "" (the empty String)
    */
   msFilter?: GlobalsString;
   /**
@@ -6187,7 +6187,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -6233,7 +6233,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   msHighContrastAdjust?: MsHighContrastAdjustProperty;
   /**
-   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum number of characters in a hyphenated word. If the word does not meet the required minimum number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
+   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum Number of characters in a hyphenated word. If the word does not meet the required minimum Number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
    *
    * **Syntax**: `auto | <integer>{1,3}`
    *
@@ -6241,7 +6241,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   msHyphenateLimitChars?: MsHyphenateLimitCharsProperty;
   /**
-   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum number of consecutive lines in an element that may be ended with a hyphenated word.
+   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum Number of consecutive lines in an element that may be ended with a hyphenated word.
    *
    * **Syntax**: `no-limit | <integer>`
    *
@@ -6465,9 +6465,9 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   msTextCombineHorizontal?: TextCombineUprightProperty;
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -6609,9 +6609,9 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   OTabSize?: TabSizeProperty<TLength>;
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -6681,7 +6681,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   WebkitAnimationFillMode?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -6797,7 +6797,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    */
@@ -6859,7 +6859,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   WebkitClipPath?: ClipPathProperty;
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -6949,7 +6949,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -6957,7 +6957,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    */
@@ -7019,7 +7019,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
    */
   WebkitLineBreak?: LineBreakProperty;
   /**
-   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified Number of lines.
    *
    * **Syntax**: `none | <integer>`
    *
@@ -7285,7 +7285,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    */
@@ -7426,7 +7426,7 @@ export interface VendorLonghandProperties<TLength = string | 0> {
   WebkitWritingMode?: WritingModeProperty;
 }
 
-export interface VendorShorthandProperties<TLength = string | 0> {
+export interface VendorShorthandProperties<TLength = String | 0> {
   /**
    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
    *
@@ -7573,9 +7573,9 @@ export interface VendorShorthandProperties<TLength = string | 0> {
   WebkitTransition?: TransitionProperty;
 }
 
-export interface VendorProperties<TLength = string | 0> extends VendorLonghandProperties<TLength>, VendorShorthandProperties<TLength> {}
+export interface VendorProperties<TLength = String | 0> extends VendorLonghandProperties<TLength>, VendorShorthandProperties<TLength> {}
 
-export interface ObsoleteProperties<TLength = string | 0> {
+export interface ObsoleteProperties<TLength = String | 0> {
   /**
    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
    *
@@ -7599,7 +7599,7 @@ export interface ObsoleteProperties<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -7877,7 +7877,7 @@ export interface ObsoleteProperties<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -8085,7 +8085,7 @@ export interface ObsoleteProperties<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -8307,7 +8307,7 @@ export interface ObsoleteProperties<TLength = string | 0> {
    */
   OAnimationFillMode?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -8445,7 +8445,7 @@ export interface ObsoleteProperties<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -8524,7 +8524,7 @@ export interface ObsoleteProperties<TLength = string | 0> {
   WebkitScrollSnapPointsY?: ScrollSnapPointsYProperty;
 }
 
-export interface SvgProperties<TLength = string | 0> {
+export interface SvgProperties<TLength = String | 0> {
   alignmentBaseline?: AlignmentBaselineProperty;
   baselineShift?: BaselineShiftProperty<TLength>;
   clip?: ClipProperty;
@@ -8587,9 +8587,9 @@ export interface SvgProperties<TLength = string | 0> {
   writingMode?: WritingModeProperty;
 }
 
-export interface Properties<TLength = string | 0> extends StandardProperties<TLength>, VendorProperties<TLength>, ObsoleteProperties<TLength>, SvgProperties<TLength> {}
+export interface Properties<TLength = String | 0> extends StandardProperties<TLength>, VendorProperties<TLength>, ObsoleteProperties<TLength>, SvgProperties<TLength> {}
 
-export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
+export interface StandardLonghandPropertiesHyphen<TLength = String | 0> {
   /**
    * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
    *
@@ -8738,7 +8738,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "animation-fill-mode"?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -9010,7 +9010,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "background-size"?: BackgroundSizeProperty<TLength>;
   /**
-   * **Syntax**: `clip | ellipsis | <string>`
+   * **Syntax**: `clip | ellipsis | <String>`
    *
    * **Initial value**: `clip`
    */
@@ -9272,7 +9272,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`border-image-outset`** CSS property sets the distance by which an element's border image is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    *
@@ -9300,7 +9300,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    *
@@ -9328,7 +9328,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`border-image-width`** CSS property sets the width of an element's border image.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `1`
    *
@@ -9920,7 +9920,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "color-adjust"?: ColorAdjustProperty;
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -10079,7 +10079,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are _anonymous replaced elements._
    *
-   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?`
+   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <String> ]?`
    *
    * **Initial value**: `normal`
    *
@@ -10236,7 +10236,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -10251,7 +10251,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    *
@@ -10339,7 +10339,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    *
@@ -10382,7 +10382,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`font-size-adjust`** CSS property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
    *
-   * **Syntax**: `none | <number>`
+   * **Syntax**: `none | <Number>`
    *
    * **Initial value**: `none`
    *
@@ -10493,7 +10493,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "font-variant-ligatures"?: FontVariantLigaturesProperty;
   /**
-   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers.
+   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for Numbers, fractions, and ordinal markers.
    *
    * **Syntax**: `normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]`
    *
@@ -10523,7 +10523,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`font-variation-settings`** CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.
    *
-   * **Syntax**: `normal | [ <string> <number> ]#`
+   * **Syntax**: `normal | [ <String> <Number> ]#`
    *
    * **Initial value**: `normal`
    *
@@ -10651,7 +10651,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`grid-template-areas`** CSS property specifies named grid areas.
    *
-   * **Syntax**: `none | <string>+`
+   * **Syntax**: `none | <String>+`
    *
    * **Initial value**: `none`
    *
@@ -10770,7 +10770,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The `initial-letter` CSS property sets styling for dropped, raised, and sunken initial letters.
    *
-   * **Syntax**: `normal | [ <number> <integer>? ]`
+   * **Syntax**: `normal | [ <Number> <integer>? ]`
    *
    * **Initial value**: `normal`
    *
@@ -11038,7 +11038,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`line-height`** CSS property sets the amount of space used for lines, such as in text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.
    *
-   * **Syntax**: `normal | <number> | <length> | <percentage>`
+   * **Syntax**: `normal | <Number> | <length> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -11094,7 +11094,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`list-style-type`** CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.
    *
-   * **Syntax**: `<counter-style> | <string> | none`
+   * **Syntax**: `<counter-style> | <String> | none`
    *
    * **Initial value**: `disc`
    *
@@ -11258,7 +11258,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`mask-border-outset`** CSS property specifies the distance by which an element's mask border is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    */
@@ -11274,7 +11274,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`mask-border-slice`** CSS property divides the image set by `mask-border-source` into regions. These regions are used to form the components of an element's mask border.
    *
-   * **Syntax**: `<number-percentage>{1,4} fill?`
+   * **Syntax**: `<Number-percentage>{1,4} fill?`
    *
    * **Initial value**: `0`
    */
@@ -11290,7 +11290,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`mask-border-width`** CSS property sets the width of an element's mask border.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `auto`
    */
@@ -11729,7 +11729,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
    */
   order?: GlobalsNumber;
   /**
-   * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
+   * The **`orphans`** CSS property sets the minimum Number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -12248,7 +12248,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`quotes`** CSS property sets how quotation marks appear.
    *
-   * **Syntax**: `none | auto | [ <string> <string> ]+`
+   * **Syntax**: `none | auto | [ <String> <String> ]+`
    *
    * **Initial value**: depends on user agent
    *
@@ -12290,7 +12290,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`rotate`** CSS property allows you to specify rotation transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <angle> | [ x | y | z | <number>{3} ] && <angle>`
+   * **Syntax**: `none | <angle> | [ x | y | z | <Number>{3} ] && <angle>`
    *
    * **Initial value**: `none`
    *
@@ -12367,7 +12367,7 @@ export interface StandardLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`scale`** CSS property allows you to specify scale transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <number>{1,3}`
+   * **Syntax**: `none | <Number>{1,3}`
    *
    * **Initial value**: `none`
    *
@@ -13093,7 +13093,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    *
@@ -13148,9 +13148,9 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   "text-orientation"?: TextOrientationProperty;
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    *
@@ -13480,7 +13480,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   "white-space"?: WhiteSpaceProperty;
   /**
-   * The **`widows`** CSS property sets the minimum number of lines in a block container that must be shown at the _top_ of a page, region, or column.
+   * The **`widows`** CSS property sets the minimum Number of lines in a block container that must be shown at the _top_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -13595,7 +13595,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
    *
-   * **Syntax**: `normal | reset | <number> | <percentage>`
+   * **Syntax**: `normal | reset | <Number> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -13608,7 +13608,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   zoom?: ZoomProperty;
 }
 
-export interface StandardShorthandPropertiesHyphen<TLength = string | 0> {
+export interface StandardShorthandPropertiesHyphen<TLength = String | 0> {
   /**
    * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
    *
@@ -13992,7 +13992,7 @@ export interface StandardShorthandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
    *
-   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
+   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <String> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
    *
    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
    * | :----: | :-----: | :------: | :----: | :-: |
@@ -14204,9 +14204,9 @@ export interface StandardShorthandPropertiesHyphen<TLength = string | 0> {
   transition?: TransitionProperty;
 }
 
-export interface StandardPropertiesHyphen<TLength = string | 0> extends StandardLonghandPropertiesHyphen<TLength>, StandardShorthandPropertiesHyphen<TLength> {}
+export interface StandardPropertiesHyphen<TLength = String | 0> extends StandardLonghandPropertiesHyphen<TLength>, StandardShorthandPropertiesHyphen<TLength> {}
 
-export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
+export interface VendorLonghandPropertiesHyphen<TLength = String | 0> {
   /**
    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
    *
@@ -14240,7 +14240,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-moz-animation-fill-mode"?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -14368,7 +14368,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-moz-box-sizing"?: BoxSizingProperty;
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -14450,7 +14450,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    */
@@ -14688,7 +14688,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-moz-window-shadow"?: MozWindowShadowProperty;
   /**
-   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
+   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a String indicating whether the object represents a keyboard shortcut.
    *
    * **Syntax**: `false | true`
    *
@@ -14762,9 +14762,9 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The `-ms-filter` CSS property is a Microsoft extension that sets or retrieves the filter or collection of filters applied to an object.
    *
-   * **Syntax**: `<string>`
+   * **Syntax**: `<String>`
    *
-   * **Initial value**: "" (the empty string)
+   * **Initial value**: "" (the empty String)
    */
   "-ms-filter"?: GlobalsString;
   /**
@@ -14778,7 +14778,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -14824,7 +14824,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-ms-high-contrast-adjust"?: MsHighContrastAdjustProperty;
   /**
-   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum number of characters in a hyphenated word. If the word does not meet the required minimum number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
+   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum Number of characters in a hyphenated word. If the word does not meet the required minimum Number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
    *
    * **Syntax**: `auto | <integer>{1,3}`
    *
@@ -14832,7 +14832,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-ms-hyphenate-limit-chars"?: MsHyphenateLimitCharsProperty;
   /**
-   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum number of consecutive lines in an element that may be ended with a hyphenated word.
+   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum Number of consecutive lines in an element that may be ended with a hyphenated word.
    *
    * **Syntax**: `no-limit | <integer>`
    *
@@ -15056,9 +15056,9 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-ms-text-combine-horizontal"?: TextCombineUprightProperty;
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -15200,9 +15200,9 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-o-tab-size"?: TabSizeProperty<TLength>;
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -15272,7 +15272,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-webkit-animation-fill-mode"?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -15388,7 +15388,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    */
@@ -15450,7 +15450,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-webkit-clip-path"?: ClipPathProperty;
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -15540,7 +15540,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -15548,7 +15548,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    */
@@ -15610,7 +15610,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
    */
   "-webkit-line-break"?: LineBreakProperty;
   /**
-   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified Number of lines.
    *
    * **Syntax**: `none | <integer>`
    *
@@ -15876,7 +15876,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    */
@@ -16017,7 +16017,7 @@ export interface VendorLonghandPropertiesHyphen<TLength = string | 0> {
   "-webkit-writing-mode"?: WritingModeProperty;
 }
 
-export interface VendorShorthandPropertiesHyphen<TLength = string | 0> {
+export interface VendorShorthandPropertiesHyphen<TLength = String | 0> {
   /**
    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
    *
@@ -16164,9 +16164,9 @@ export interface VendorShorthandPropertiesHyphen<TLength = string | 0> {
   "-webkit-transition"?: TransitionProperty;
 }
 
-export interface VendorPropertiesHyphen<TLength = string | 0> extends VendorLonghandPropertiesHyphen<TLength>, VendorShorthandPropertiesHyphen<TLength> {}
+export interface VendorPropertiesHyphen<TLength = String | 0> extends VendorLonghandPropertiesHyphen<TLength>, VendorShorthandPropertiesHyphen<TLength> {}
 
-export interface ObsoletePropertiesHyphen<TLength = string | 0> {
+export interface ObsoletePropertiesHyphen<TLength = String | 0> {
   /**
    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
    *
@@ -16190,7 +16190,7 @@ export interface ObsoletePropertiesHyphen<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -16468,7 +16468,7 @@ export interface ObsoletePropertiesHyphen<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -16676,7 +16676,7 @@ export interface ObsoletePropertiesHyphen<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -16898,7 +16898,7 @@ export interface ObsoletePropertiesHyphen<TLength = string | 0> {
    */
   "-o-animation-fill-mode"?: AnimationFillModeProperty;
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -17036,7 +17036,7 @@ export interface ObsoletePropertiesHyphen<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -17115,7 +17115,7 @@ export interface ObsoletePropertiesHyphen<TLength = string | 0> {
   "-webkit-scroll-snap-points-y"?: ScrollSnapPointsYProperty;
 }
 
-export interface SvgPropertiesHyphen<TLength = string | 0> {
+export interface SvgPropertiesHyphen<TLength = String | 0> {
   "alignment-baseline"?: AlignmentBaselineProperty;
   "baseline-shift"?: BaselineShiftProperty<TLength>;
   clip?: ClipProperty;
@@ -17178,13 +17178,13 @@ export interface SvgPropertiesHyphen<TLength = string | 0> {
   "writing-mode"?: WritingModeProperty;
 }
 
-export interface PropertiesHyphen<TLength = string | 0>
+export interface PropertiesHyphen<TLength = String | 0>
   extends StandardPropertiesHyphen<TLength>,
     VendorPropertiesHyphen<TLength>,
     ObsoletePropertiesHyphen<TLength>,
     SvgPropertiesHyphen<TLength> {}
 
-export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
+export interface StandardLonghandPropertiesFallback<TLength = String | 0> {
   /**
    * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
    *
@@ -17333,7 +17333,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
    */
   animationFillMode?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -17605,7 +17605,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
    */
   backgroundSize?: BackgroundSizeProperty<TLength> | BackgroundSizeProperty<TLength>[];
   /**
-   * **Syntax**: `clip | ellipsis | <string>`
+   * **Syntax**: `clip | ellipsis | <String>`
    *
    * **Initial value**: `clip`
    */
@@ -17867,7 +17867,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`border-image-outset`** CSS property sets the distance by which an element's border image is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    *
@@ -17895,7 +17895,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    *
@@ -17923,7 +17923,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`border-image-width`** CSS property sets the width of an element's border image.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `1`
    *
@@ -18515,7 +18515,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
    */
   colorAdjust?: ColorAdjustProperty | ColorAdjustProperty[];
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -18674,7 +18674,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are _anonymous replaced elements._
    *
-   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?`
+   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <String> ]?`
    *
    * **Initial value**: `normal`
    *
@@ -18831,7 +18831,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -18846,7 +18846,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    *
@@ -18934,7 +18934,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    *
@@ -18977,7 +18977,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`font-size-adjust`** CSS property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
    *
-   * **Syntax**: `none | <number>`
+   * **Syntax**: `none | <Number>`
    *
    * **Initial value**: `none`
    *
@@ -19088,7 +19088,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
    */
   fontVariantLigatures?: FontVariantLigaturesProperty | FontVariantLigaturesProperty[];
   /**
-   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers.
+   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for Numbers, fractions, and ordinal markers.
    *
    * **Syntax**: `normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]`
    *
@@ -19118,7 +19118,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`font-variation-settings`** CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.
    *
-   * **Syntax**: `normal | [ <string> <number> ]#`
+   * **Syntax**: `normal | [ <String> <Number> ]#`
    *
    * **Initial value**: `normal`
    *
@@ -19246,7 +19246,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`grid-template-areas`** CSS property specifies named grid areas.
    *
-   * **Syntax**: `none | <string>+`
+   * **Syntax**: `none | <String>+`
    *
    * **Initial value**: `none`
    *
@@ -19365,7 +19365,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The `initial-letter` CSS property sets styling for dropped, raised, and sunken initial letters.
    *
-   * **Syntax**: `normal | [ <number> <integer>? ]`
+   * **Syntax**: `normal | [ <Number> <integer>? ]`
    *
    * **Initial value**: `normal`
    *
@@ -19633,7 +19633,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`line-height`** CSS property sets the amount of space used for lines, such as in text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.
    *
-   * **Syntax**: `normal | <number> | <length> | <percentage>`
+   * **Syntax**: `normal | <Number> | <length> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -19689,7 +19689,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`list-style-type`** CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.
    *
-   * **Syntax**: `<counter-style> | <string> | none`
+   * **Syntax**: `<counter-style> | <String> | none`
    *
    * **Initial value**: `disc`
    *
@@ -19853,7 +19853,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`mask-border-outset`** CSS property specifies the distance by which an element's mask border is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    */
@@ -19869,7 +19869,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`mask-border-slice`** CSS property divides the image set by `mask-border-source` into regions. These regions are used to form the components of an element's mask border.
    *
-   * **Syntax**: `<number-percentage>{1,4} fill?`
+   * **Syntax**: `<Number-percentage>{1,4} fill?`
    *
    * **Initial value**: `0`
    */
@@ -19885,7 +19885,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`mask-border-width`** CSS property sets the width of an element's mask border.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `auto`
    */
@@ -20324,7 +20324,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
    */
   order?: GlobalsNumber | GlobalsNumber[];
   /**
-   * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
+   * The **`orphans`** CSS property sets the minimum Number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -20843,7 +20843,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`quotes`** CSS property sets how quotation marks appear.
    *
-   * **Syntax**: `none | auto | [ <string> <string> ]+`
+   * **Syntax**: `none | auto | [ <String> <String> ]+`
    *
    * **Initial value**: depends on user agent
    *
@@ -20885,7 +20885,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`rotate`** CSS property allows you to specify rotation transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <angle> | [ x | y | z | <number>{3} ] && <angle>`
+   * **Syntax**: `none | <angle> | [ x | y | z | <Number>{3} ] && <angle>`
    *
    * **Initial value**: `none`
    *
@@ -20962,7 +20962,7 @@ export interface StandardLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`scale`** CSS property allows you to specify scale transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <number>{1,3}`
+   * **Syntax**: `none | <Number>{1,3}`
    *
    * **Initial value**: `none`
    *
@@ -21688,7 +21688,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    *
@@ -21743,9 +21743,9 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   textOrientation?: TextOrientationProperty | TextOrientationProperty[];
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    *
@@ -22075,7 +22075,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   whiteSpace?: WhiteSpaceProperty | WhiteSpaceProperty[];
   /**
-   * The **`widows`** CSS property sets the minimum number of lines in a block container that must be shown at the _top_ of a page, region, or column.
+   * The **`widows`** CSS property sets the minimum Number of lines in a block container that must be shown at the _top_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -22190,7 +22190,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
    *
-   * **Syntax**: `normal | reset | <number> | <percentage>`
+   * **Syntax**: `normal | reset | <Number> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -22203,7 +22203,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   zoom?: ZoomProperty | ZoomProperty[];
 }
 
-export interface StandardShorthandPropertiesFallback<TLength = string | 0> {
+export interface StandardShorthandPropertiesFallback<TLength = String | 0> {
   /**
    * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
    *
@@ -22587,7 +22587,7 @@ export interface StandardShorthandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
    *
-   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
+   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <String> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
    *
    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
    * | :----: | :-----: | :------: | :----: | :-: |
@@ -22799,9 +22799,9 @@ export interface StandardShorthandPropertiesFallback<TLength = string | 0> {
   transition?: TransitionProperty | TransitionProperty[];
 }
 
-export interface StandardPropertiesFallback<TLength = string | 0> extends StandardLonghandPropertiesFallback<TLength>, StandardShorthandPropertiesFallback<TLength> {}
+export interface StandardPropertiesFallback<TLength = String | 0> extends StandardLonghandPropertiesFallback<TLength>, StandardShorthandPropertiesFallback<TLength> {}
 
-export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
+export interface VendorLonghandPropertiesFallback<TLength = String | 0> {
   /**
    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
    *
@@ -22835,7 +22835,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   MozAnimationFillMode?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -22963,7 +22963,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   MozBoxSizing?: BoxSizingProperty | BoxSizingProperty[];
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -23045,7 +23045,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    */
@@ -23283,7 +23283,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   MozWindowShadow?: MozWindowShadowProperty | MozWindowShadowProperty[];
   /**
-   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
+   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a String indicating whether the object represents a keyboard shortcut.
    *
    * **Syntax**: `false | true`
    *
@@ -23357,9 +23357,9 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The `-ms-filter` CSS property is a Microsoft extension that sets or retrieves the filter or collection of filters applied to an object.
    *
-   * **Syntax**: `<string>`
+   * **Syntax**: `<String>`
    *
-   * **Initial value**: "" (the empty string)
+   * **Initial value**: "" (the empty String)
    */
   msFilter?: GlobalsString | GlobalsString[];
   /**
@@ -23373,7 +23373,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -23419,7 +23419,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   msHighContrastAdjust?: MsHighContrastAdjustProperty | MsHighContrastAdjustProperty[];
   /**
-   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum number of characters in a hyphenated word. If the word does not meet the required minimum number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
+   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum Number of characters in a hyphenated word. If the word does not meet the required minimum Number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
    *
    * **Syntax**: `auto | <integer>{1,3}`
    *
@@ -23427,7 +23427,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   msHyphenateLimitChars?: MsHyphenateLimitCharsProperty | MsHyphenateLimitCharsProperty[];
   /**
-   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum number of consecutive lines in an element that may be ended with a hyphenated word.
+   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum Number of consecutive lines in an element that may be ended with a hyphenated word.
    *
    * **Syntax**: `no-limit | <integer>`
    *
@@ -23651,9 +23651,9 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   msTextCombineHorizontal?: TextCombineUprightProperty | TextCombineUprightProperty[];
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -23795,9 +23795,9 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   OTabSize?: TabSizeProperty<TLength> | TabSizeProperty<TLength>[];
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -23867,7 +23867,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   WebkitAnimationFillMode?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -23983,7 +23983,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    */
@@ -24045,7 +24045,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   WebkitClipPath?: ClipPathProperty | ClipPathProperty[];
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -24135,7 +24135,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -24143,7 +24143,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    */
@@ -24205,7 +24205,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
    */
   WebkitLineBreak?: LineBreakProperty | LineBreakProperty[];
   /**
-   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified Number of lines.
    *
    * **Syntax**: `none | <integer>`
    *
@@ -24471,7 +24471,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    */
@@ -24612,7 +24612,7 @@ export interface VendorLonghandPropertiesFallback<TLength = string | 0> {
   WebkitWritingMode?: WritingModeProperty | WritingModeProperty[];
 }
 
-export interface VendorShorthandPropertiesFallback<TLength = string | 0> {
+export interface VendorShorthandPropertiesFallback<TLength = String | 0> {
   /**
    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
    *
@@ -24759,9 +24759,9 @@ export interface VendorShorthandPropertiesFallback<TLength = string | 0> {
   WebkitTransition?: TransitionProperty | TransitionProperty[];
 }
 
-export interface VendorPropertiesFallback<TLength = string | 0> extends VendorLonghandPropertiesFallback<TLength>, VendorShorthandPropertiesFallback<TLength> {}
+export interface VendorPropertiesFallback<TLength = String | 0> extends VendorLonghandPropertiesFallback<TLength>, VendorShorthandPropertiesFallback<TLength> {}
 
-export interface ObsoletePropertiesFallback<TLength = string | 0> {
+export interface ObsoletePropertiesFallback<TLength = String | 0> {
   /**
    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
    *
@@ -24785,7 +24785,7 @@ export interface ObsoletePropertiesFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -25063,7 +25063,7 @@ export interface ObsoletePropertiesFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -25271,7 +25271,7 @@ export interface ObsoletePropertiesFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -25493,7 +25493,7 @@ export interface ObsoletePropertiesFallback<TLength = string | 0> {
    */
   OAnimationFillMode?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -25631,7 +25631,7 @@ export interface ObsoletePropertiesFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -25710,7 +25710,7 @@ export interface ObsoletePropertiesFallback<TLength = string | 0> {
   WebkitScrollSnapPointsY?: ScrollSnapPointsYProperty | ScrollSnapPointsYProperty[];
 }
 
-export interface SvgPropertiesFallback<TLength = string | 0> {
+export interface SvgPropertiesFallback<TLength = String | 0> {
   alignmentBaseline?: AlignmentBaselineProperty | AlignmentBaselineProperty[];
   baselineShift?: BaselineShiftProperty<TLength> | BaselineShiftProperty<TLength>[];
   clip?: ClipProperty | ClipProperty[];
@@ -25773,13 +25773,13 @@ export interface SvgPropertiesFallback<TLength = string | 0> {
   writingMode?: WritingModeProperty | WritingModeProperty[];
 }
 
-export interface PropertiesFallback<TLength = string | 0>
+export interface PropertiesFallback<TLength = String | 0>
   extends StandardPropertiesFallback<TLength>,
     VendorPropertiesFallback<TLength>,
     ObsoletePropertiesFallback<TLength>,
     SvgPropertiesFallback<TLength> {}
 
-export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> {
+export interface StandardLonghandPropertiesHyphenFallback<TLength = String | 0> {
   /**
    * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
    *
@@ -25928,7 +25928,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
    */
   "animation-fill-mode"?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -26200,7 +26200,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
    */
   "background-size"?: BackgroundSizeProperty<TLength> | BackgroundSizeProperty<TLength>[];
   /**
-   * **Syntax**: `clip | ellipsis | <string>`
+   * **Syntax**: `clip | ellipsis | <String>`
    *
    * **Initial value**: `clip`
    */
@@ -26462,7 +26462,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`border-image-outset`** CSS property sets the distance by which an element's border image is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    *
@@ -26490,7 +26490,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    *
@@ -26518,7 +26518,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`border-image-width`** CSS property sets the width of an element's border image.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `1`
    *
@@ -27110,7 +27110,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
    */
   "color-adjust"?: ColorAdjustProperty | ColorAdjustProperty[];
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -27269,7 +27269,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are _anonymous replaced elements._
    *
-   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <string> ]?`
+   * **Syntax**: `normal | none | [ <content-replacement> | <content-list> ] [/ <String> ]?`
    *
    * **Initial value**: `normal`
    *
@@ -27426,7 +27426,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -27441,7 +27441,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    *
@@ -27529,7 +27529,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    *
@@ -27572,7 +27572,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`font-size-adjust`** CSS property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
    *
-   * **Syntax**: `none | <number>`
+   * **Syntax**: `none | <Number>`
    *
    * **Initial value**: `none`
    *
@@ -27683,7 +27683,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
    */
   "font-variant-ligatures"?: FontVariantLigaturesProperty | FontVariantLigaturesProperty[];
   /**
-   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for numbers, fractions, and ordinal markers.
+   * The **`font-variant-numeric`** CSS property controls the usage of alternate glyphs for Numbers, fractions, and ordinal markers.
    *
    * **Syntax**: `normal | [ <numeric-figure-values> || <numeric-spacing-values> || <numeric-fraction-values> || ordinal || slashed-zero ]`
    *
@@ -27713,7 +27713,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`font-variation-settings`** CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.
    *
-   * **Syntax**: `normal | [ <string> <number> ]#`
+   * **Syntax**: `normal | [ <String> <Number> ]#`
    *
    * **Initial value**: `normal`
    *
@@ -27841,7 +27841,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`grid-template-areas`** CSS property specifies named grid areas.
    *
-   * **Syntax**: `none | <string>+`
+   * **Syntax**: `none | <String>+`
    *
    * **Initial value**: `none`
    *
@@ -27960,7 +27960,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The `initial-letter` CSS property sets styling for dropped, raised, and sunken initial letters.
    *
-   * **Syntax**: `normal | [ <number> <integer>? ]`
+   * **Syntax**: `normal | [ <Number> <integer>? ]`
    *
    * **Initial value**: `normal`
    *
@@ -28228,7 +28228,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`line-height`** CSS property sets the amount of space used for lines, such as in text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.
    *
-   * **Syntax**: `normal | <number> | <length> | <percentage>`
+   * **Syntax**: `normal | <Number> | <length> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -28284,7 +28284,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`list-style-type`** CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.
    *
-   * **Syntax**: `<counter-style> | <string> | none`
+   * **Syntax**: `<counter-style> | <String> | none`
    *
    * **Initial value**: `disc`
    *
@@ -28448,7 +28448,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`mask-border-outset`** CSS property specifies the distance by which an element's mask border is set out from its border box.
    *
-   * **Syntax**: `[ <length> | <number> ]{1,4}`
+   * **Syntax**: `[ <length> | <Number> ]{1,4}`
    *
    * **Initial value**: `0`
    */
@@ -28464,7 +28464,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`mask-border-slice`** CSS property divides the image set by `mask-border-source` into regions. These regions are used to form the components of an element's mask border.
    *
-   * **Syntax**: `<number-percentage>{1,4} fill?`
+   * **Syntax**: `<Number-percentage>{1,4} fill?`
    *
    * **Initial value**: `0`
    */
@@ -28480,7 +28480,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`mask-border-width`** CSS property sets the width of an element's mask border.
    *
-   * **Syntax**: `[ <length-percentage> | <number> | auto ]{1,4}`
+   * **Syntax**: `[ <length-percentage> | <Number> | auto ]{1,4}`
    *
    * **Initial value**: `auto`
    */
@@ -28919,7 +28919,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
    */
   order?: GlobalsNumber | GlobalsNumber[];
   /**
-   * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
+   * The **`orphans`** CSS property sets the minimum Number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -29438,7 +29438,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`quotes`** CSS property sets how quotation marks appear.
    *
-   * **Syntax**: `none | auto | [ <string> <string> ]+`
+   * **Syntax**: `none | auto | [ <String> <String> ]+`
    *
    * **Initial value**: depends on user agent
    *
@@ -29480,7 +29480,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`rotate`** CSS property allows you to specify rotation transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <angle> | [ x | y | z | <number>{3} ] && <angle>`
+   * **Syntax**: `none | <angle> | [ x | y | z | <Number>{3} ] && <angle>`
    *
    * **Initial value**: `none`
    *
@@ -29557,7 +29557,7 @@ export interface StandardLonghandPropertiesHyphenFallback<TLength = string | 0> 
   /**
    * The **`scale`** CSS property allows you to specify scale transforms individually and independantly of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
    *
-   * **Syntax**: `none | <number>{1,3}`
+   * **Syntax**: `none | <Number>{1,3}`
    *
    * **Initial value**: `none`
    *
@@ -30283,7 +30283,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    *
@@ -30338,9 +30338,9 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   "text-orientation"?: TextOrientationProperty | TextOrientationProperty[];
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    *
@@ -30670,7 +30670,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
    */
   "white-space"?: WhiteSpaceProperty | WhiteSpaceProperty[];
   /**
-   * The **`widows`** CSS property sets the minimum number of lines in a block container that must be shown at the _top_ of a page, region, or column.
+   * The **`widows`** CSS property sets the minimum Number of lines in a block container that must be shown at the _top_ of a page, region, or column.
    *
    * **Syntax**: `<integer>`
    *
@@ -30785,7 +30785,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   /**
    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
    *
-   * **Syntax**: `normal | reset | <number> | <percentage>`
+   * **Syntax**: `normal | reset | <Number> | <percentage>`
    *
    * **Initial value**: `normal`
    *
@@ -30798,7 +30798,7 @@ The scroll-padding properties define offsets for the optimal viewing region of
   zoom?: ZoomProperty | ZoomProperty[];
 }
 
-export interface StandardShorthandPropertiesHyphenFallback<TLength = string | 0> {
+export interface StandardShorthandPropertiesHyphenFallback<TLength = String | 0> {
   /**
    * The `**all**` CSS shorthand property sets all of an element's properties (other than `unicode-bidi` and `direction`) to their initial or inherited values, or to the values specified in another stylesheet origin.
    *
@@ -31182,7 +31182,7 @@ export interface StandardShorthandPropertiesHyphenFallback<TLength = string | 0>
   /**
    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
    *
-   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
+   * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <String> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
    *
    * | Chrome | Firefox |  Safari  |  Edge  | IE  |
    * | :----: | :-----: | :------: | :----: | :-: |
@@ -31394,11 +31394,11 @@ export interface StandardShorthandPropertiesHyphenFallback<TLength = string | 0>
   transition?: TransitionProperty | TransitionProperty[];
 }
 
-export interface StandardPropertiesHyphenFallback<TLength = string | 0>
+export interface StandardPropertiesHyphenFallback<TLength = String | 0>
   extends StandardLonghandPropertiesHyphenFallback<TLength>,
     StandardShorthandPropertiesHyphenFallback<TLength> {}
 
-export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
+export interface VendorLonghandPropertiesHyphenFallback<TLength = String | 0> {
   /**
    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
    *
@@ -31432,7 +31432,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-moz-animation-fill-mode"?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -31560,7 +31560,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-moz-box-sizing"?: BoxSizingProperty | BoxSizingProperty[];
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -31642,7 +31642,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
    *
-   * **Syntax**: `normal | <string>`
+   * **Syntax**: `normal | <String>`
    *
    * **Initial value**: `normal`
    */
@@ -31880,7 +31880,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-moz-window-shadow"?: MozWindowShadowProperty | MozWindowShadowProperty[];
   /**
-   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
+   * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a String indicating whether the object represents a keyboard shortcut.
    *
    * **Syntax**: `false | true`
    *
@@ -31954,9 +31954,9 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The `-ms-filter` CSS property is a Microsoft extension that sets or retrieves the filter or collection of filters applied to an object.
    *
-   * **Syntax**: `<string>`
+   * **Syntax**: `<String>`
    *
-   * **Initial value**: "" (the empty string)
+   * **Initial value**: "" (the empty String)
    */
   "-ms-filter"?: GlobalsString | GlobalsString[];
   /**
@@ -31970,7 +31970,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -32016,7 +32016,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-ms-high-contrast-adjust"?: MsHighContrastAdjustProperty | MsHighContrastAdjustProperty[];
   /**
-   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum number of characters in a hyphenated word. If the word does not meet the required minimum number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
+   * The **`-ms-hyphenate-limit-chars`** CSS property is a Microsoft extension that specifies one to three values indicating the minimum Number of characters in a hyphenated word. If the word does not meet the required minimum Number of characters in the word, before the hyphen, or after the hyphen, then the word is not hyphenated.
    *
    * **Syntax**: `auto | <integer>{1,3}`
    *
@@ -32024,7 +32024,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-ms-hyphenate-limit-chars"?: MsHyphenateLimitCharsProperty | MsHyphenateLimitCharsProperty[];
   /**
-   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum number of consecutive lines in an element that may be ended with a hyphenated word.
+   * The **`-ms-hyphenate-limit-lines`** CSS property is a Microsoft extension specifying the maximum Number of consecutive lines in an element that may be ended with a hyphenated word.
    *
    * **Syntax**: `no-limit | <integer>`
    *
@@ -32248,9 +32248,9 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-ms-text-combine-horizontal"?: TextCombineUprightProperty | TextCombineUprightProperty[];
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -32392,9 +32392,9 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-o-tab-size"?: TabSizeProperty<TLength> | TabSizeProperty<TLength>[];
   /**
-   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
+   * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom String.
    *
-   * **Syntax**: `[ clip | ellipsis | <string> ]{1,2}`
+   * **Syntax**: `[ clip | ellipsis | <String> ]{1,2}`
    *
    * **Initial value**: `clip`
    */
@@ -32464,7 +32464,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-webkit-animation-fill-mode"?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -32580,7 +32580,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
    *
-   * **Syntax**: `<number-percentage>{1,4} && fill?`
+   * **Syntax**: `<Number-percentage>{1,4} && fill?`
    *
    * **Initial value**: `100%`
    */
@@ -32642,7 +32642,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-webkit-clip-path"?: ClipPathProperty | ClipPathProperty[];
   /**
-   * The **`column-count`** CSS property breaks an element's content into the specified number of columns.
+   * The **`column-count`** CSS property breaks an element's content into the specified Number of columns.
    *
    * **Syntax**: `<integer> | auto`
    *
@@ -32732,7 +32732,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    */
@@ -32740,7 +32740,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `1`
    */
@@ -32802,7 +32802,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
    */
   "-webkit-line-break"?: LineBreakProperty | LineBreakProperty[];
   /**
-   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+   * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified Number of lines.
    *
    * **Syntax**: `none | <integer>`
    *
@@ -33068,7 +33068,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
    *
-   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <string>`
+   * **Syntax**: `none | [ [ filled | open ] || [ dot | circle | double-circle | triangle | sesame ] ] | <String>`
    *
    * **Initial value**: `none`
    */
@@ -33209,7 +33209,7 @@ export interface VendorLonghandPropertiesHyphenFallback<TLength = string | 0> {
   "-webkit-writing-mode"?: WritingModeProperty | WritingModeProperty[];
 }
 
-export interface VendorShorthandPropertiesHyphenFallback<TLength = string | 0> {
+export interface VendorShorthandPropertiesHyphenFallback<TLength = String | 0> {
   /**
    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
    *
@@ -33356,9 +33356,9 @@ export interface VendorShorthandPropertiesHyphenFallback<TLength = string | 0> {
   "-webkit-transition"?: TransitionProperty | TransitionProperty[];
 }
 
-export interface VendorPropertiesHyphenFallback<TLength = string | 0> extends VendorLonghandPropertiesHyphenFallback<TLength>, VendorShorthandPropertiesHyphenFallback<TLength> {}
+export interface VendorPropertiesHyphenFallback<TLength = String | 0> extends VendorLonghandPropertiesHyphenFallback<TLength>, VendorShorthandPropertiesHyphenFallback<TLength> {}
 
-export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
+export interface ObsoletePropertiesHyphenFallback<TLength = String | 0> {
   /**
    * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
    *
@@ -33382,7 +33382,7 @@ export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -33660,7 +33660,7 @@ export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -33868,7 +33868,7 @@ export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -34090,7 +34090,7 @@ export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
    */
   "-o-animation-fill-mode"?: AnimationFillModeProperty | AnimationFillModeProperty[];
   /**
-   * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
+   * The **`animation-iteration-count`** CSS property sets the Number of times an animation cycle should be played before stopping.
    *
    * **Syntax**: `<single-animation-iteration-count>#`
    *
@@ -34228,7 +34228,7 @@ export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
   /**
    * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
    *
-   * **Syntax**: `<number>`
+   * **Syntax**: `<Number>`
    *
    * **Initial value**: `0`
    *
@@ -34307,7 +34307,7 @@ export interface ObsoletePropertiesHyphenFallback<TLength = string | 0> {
   "-webkit-scroll-snap-points-y"?: ScrollSnapPointsYProperty | ScrollSnapPointsYProperty[];
 }
 
-export interface SvgPropertiesHyphenFallback<TLength = string | 0> {
+export interface SvgPropertiesHyphenFallback<TLength = String | 0> {
   "alignment-baseline"?: AlignmentBaselineProperty | AlignmentBaselineProperty[];
   "baseline-shift"?: BaselineShiftProperty<TLength> | BaselineShiftProperty<TLength>[];
   clip?: ClipProperty | ClipProperty[];
@@ -34370,121 +34370,121 @@ export interface SvgPropertiesHyphenFallback<TLength = string | 0> {
   "writing-mode"?: WritingModeProperty | WritingModeProperty[];
 }
 
-export interface PropertiesHyphenFallback<TLength = string | 0>
+export interface PropertiesHyphenFallback<TLength = String | 0>
   extends StandardPropertiesHyphenFallback<TLength>,
     VendorPropertiesHyphenFallback<TLength>,
     ObsoletePropertiesHyphenFallback<TLength>,
     SvgPropertiesHyphenFallback<TLength> {}
 
 export interface CounterStyle {
-  additiveSymbols?: string;
-  fallback?: string;
-  negative?: string;
-  pad?: string;
-  prefix?: string;
+  additiveSymbols?: String;
+  fallback?: String;
+  negative?: String;
+  pad?: String;
+  prefix?: String;
   range?: CounterStyleRangeProperty;
   speakAs?: CounterStyleSpeakAsProperty;
-  suffix?: string;
-  symbols?: string;
+  suffix?: String;
+  symbols?: String;
   system?: CounterStyleSystemProperty;
 }
 
 export interface CounterStyleHyphen {
-  "additive-symbols"?: string;
-  fallback?: string;
-  negative?: string;
-  pad?: string;
-  prefix?: string;
+  "additive-symbols"?: String;
+  fallback?: String;
+  negative?: String;
+  pad?: String;
+  prefix?: String;
   range?: CounterStyleRangeProperty;
   "speak-as"?: CounterStyleSpeakAsProperty;
-  suffix?: string;
-  symbols?: string;
+  suffix?: String;
+  symbols?: String;
   system?: CounterStyleSystemProperty;
 }
 
 export interface CounterStyleFallback {
-  additiveSymbols?: string | string[];
-  fallback?: string | string[];
-  negative?: string | string[];
-  pad?: string | string[];
-  prefix?: string | string[];
+  additiveSymbols?: String | String[];
+  fallback?: String | String[];
+  negative?: String | String[];
+  pad?: String | String[];
+  prefix?: String | String[];
   range?: CounterStyleRangeProperty | CounterStyleRangeProperty[];
   speakAs?: CounterStyleSpeakAsProperty | CounterStyleSpeakAsProperty[];
-  suffix?: string | string[];
-  symbols?: string | string[];
+  suffix?: String | String[];
+  symbols?: String | String[];
   system?: CounterStyleSystemProperty | CounterStyleSystemProperty[];
 }
 
 export interface CounterStyleHyphenFallback {
-  "additive-symbols"?: string | string[];
-  fallback?: string | string[];
-  negative?: string | string[];
-  pad?: string | string[];
-  prefix?: string | string[];
+  "additive-symbols"?: String | String[];
+  fallback?: String | String[];
+  negative?: String | String[];
+  pad?: String | String[];
+  prefix?: String | String[];
   range?: CounterStyleRangeProperty | CounterStyleRangeProperty[];
   "speak-as"?: CounterStyleSpeakAsProperty | CounterStyleSpeakAsProperty[];
-  suffix?: string | string[];
-  symbols?: string | string[];
+  suffix?: String | String[];
+  symbols?: String | String[];
   system?: CounterStyleSystemProperty | CounterStyleSystemProperty[];
 }
 
 export interface FontFace {
   MozFontFeatureSettings?: FontFaceFontFeatureSettingsProperty;
   fontDisplay?: FontFaceFontDisplayProperty;
-  fontFamily?: string;
+  fontFamily?: String;
   fontFeatureSettings?: FontFaceFontFeatureSettingsProperty;
   fontStretch?: FontFaceFontStretchProperty;
   fontStyle?: FontFaceFontStyleProperty;
   fontVariant?: FontFaceFontVariantProperty;
   fontVariationSettings?: FontFaceFontVariationSettingsProperty;
   fontWeight?: FontFaceFontWeightProperty;
-  src?: string;
-  unicodeRange?: string;
+  src?: String;
+  unicodeRange?: String;
 }
 
 export interface FontFaceHyphen {
   "-moz-font-feature-settings"?: FontFaceFontFeatureSettingsProperty;
   "font-display"?: FontFaceFontDisplayProperty;
-  "font-family"?: string;
+  "font-family"?: String;
   "font-feature-settings"?: FontFaceFontFeatureSettingsProperty;
   "font-stretch"?: FontFaceFontStretchProperty;
   "font-style"?: FontFaceFontStyleProperty;
   "font-variant"?: FontFaceFontVariantProperty;
   "font-variation-settings"?: FontFaceFontVariationSettingsProperty;
   "font-weight"?: FontFaceFontWeightProperty;
-  src?: string;
-  "unicode-range"?: string;
+  src?: String;
+  "unicode-range"?: String;
 }
 
 export interface FontFaceFallback {
   MozFontFeatureSettings?: FontFaceFontFeatureSettingsProperty | FontFaceFontFeatureSettingsProperty[];
   fontDisplay?: FontFaceFontDisplayProperty | FontFaceFontDisplayProperty[];
-  fontFamily?: string | string[];
+  fontFamily?: String | String[];
   fontFeatureSettings?: FontFaceFontFeatureSettingsProperty | FontFaceFontFeatureSettingsProperty[];
   fontStretch?: FontFaceFontStretchProperty | FontFaceFontStretchProperty[];
   fontStyle?: FontFaceFontStyleProperty | FontFaceFontStyleProperty[];
   fontVariant?: FontFaceFontVariantProperty | FontFaceFontVariantProperty[];
   fontVariationSettings?: FontFaceFontVariationSettingsProperty | FontFaceFontVariationSettingsProperty[];
   fontWeight?: FontFaceFontWeightProperty | FontFaceFontWeightProperty[];
-  src?: string | string[];
-  unicodeRange?: string | string[];
+  src?: String | String[];
+  unicodeRange?: String | String[];
 }
 
 export interface FontFaceHyphenFallback {
   "-moz-font-feature-settings"?: FontFaceFontFeatureSettingsProperty | FontFaceFontFeatureSettingsProperty[];
   "font-display"?: FontFaceFontDisplayProperty | FontFaceFontDisplayProperty[];
-  "font-family"?: string | string[];
+  "font-family"?: String | String[];
   "font-feature-settings"?: FontFaceFontFeatureSettingsProperty | FontFaceFontFeatureSettingsProperty[];
   "font-stretch"?: FontFaceFontStretchProperty | FontFaceFontStretchProperty[];
   "font-style"?: FontFaceFontStyleProperty | FontFaceFontStyleProperty[];
   "font-variant"?: FontFaceFontVariantProperty | FontFaceFontVariantProperty[];
   "font-variation-settings"?: FontFaceFontVariationSettingsProperty | FontFaceFontVariationSettingsProperty[];
   "font-weight"?: FontFaceFontWeightProperty | FontFaceFontWeightProperty[];
-  src?: string | string[];
-  "unicode-range"?: string | string[];
+  src?: String | String[];
+  "unicode-range"?: String | String[];
 }
 
-export interface Viewport<TLength = string | 0> {
+export interface Viewport<TLength = String | 0> {
   msHeight?: ViewportHeightProperty<TLength>;
   msMaxHeight?: ViewportMaxHeightProperty<TLength>;
   msMaxWidth?: ViewportMaxWidthProperty<TLength>;
@@ -34510,7 +34510,7 @@ export interface Viewport<TLength = string | 0> {
   zoom?: ViewportZoomProperty;
 }
 
-export interface ViewportHyphen<TLength = string | 0> {
+export interface ViewportHyphen<TLength = String | 0> {
   "-ms-height"?: ViewportHeightProperty<TLength>;
   "-ms-max-height"?: ViewportMaxHeightProperty<TLength>;
   "-ms-max-width"?: ViewportMaxWidthProperty<TLength>;
@@ -34536,7 +34536,7 @@ export interface ViewportHyphen<TLength = string | 0> {
   zoom?: ViewportZoomProperty;
 }
 
-export interface ViewportFallback<TLength = string | 0> {
+export interface ViewportFallback<TLength = String | 0> {
   msHeight?: ViewportHeightProperty<TLength> | ViewportHeightProperty<TLength>[];
   msMaxHeight?: ViewportMaxHeightProperty<TLength> | ViewportMaxHeightProperty<TLength>[];
   msMaxWidth?: ViewportMaxWidthProperty<TLength> | ViewportMaxWidthProperty<TLength>[];
@@ -34562,7 +34562,7 @@ export interface ViewportFallback<TLength = string | 0> {
   zoom?: ViewportZoomProperty | ViewportZoomProperty[];
 }
 
-export interface ViewportHyphenFallback<TLength = string | 0> {
+export interface ViewportHyphenFallback<TLength = String | 0> {
   "-ms-height"?: ViewportHeightProperty<TLength> | ViewportHeightProperty<TLength>[];
   "-ms-max-height"?: ViewportMaxHeightProperty<TLength> | ViewportMaxHeightProperty<TLength>[];
   "-ms-max-width"?: ViewportMaxWidthProperty<TLength> | ViewportMaxWidthProperty<TLength>[];
@@ -35129,7 +35129,7 @@ export type SvgAttributes =
   | "[stop-opacity]"
   | "[strikethrough-position]"
   | "[strikethrough-thickness]"
-  | "[string]"
+  | "[String]"
   | "[stroke-dasharray]"
   | "[stroke-dashoffset]"
   | "[stroke-linecap]"
@@ -35195,73 +35195,73 @@ export type SvgAttributes =
 
 export type Globals = "-moz-initial" | "inherit" | "initial" | "revert" | "unset";
 
-type GlobalsString = Globals | string;
+type GlobalsString = Globals | String;
 
-type GlobalsNumber = Globals | number;
+type GlobalsNumber = Globals | Number;
 
-export type AlignContentProperty = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | string;
+export type AlignContentProperty = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | String;
 
-export type AlignItemsProperty = Globals | SelfPosition | "baseline" | "normal" | "stretch" | string;
+export type AlignItemsProperty = Globals | SelfPosition | "baseline" | "normal" | "stretch" | String;
 
-export type AlignSelfProperty = Globals | SelfPosition | "auto" | "baseline" | "normal" | "stretch" | string;
+export type AlignSelfProperty = Globals | SelfPosition | "auto" | "baseline" | "normal" | "stretch" | String;
 
-export type AnimationProperty = Globals | SingleAnimation | string;
+export type AnimationProperty = Globals | SingleAnimation | String;
 
-export type AnimationDirectionProperty = Globals | SingleAnimationDirection | string;
+export type AnimationDirectionProperty = Globals | SingleAnimationDirection | String;
 
-export type AnimationFillModeProperty = Globals | SingleAnimationFillMode | string;
+export type AnimationFillModeProperty = Globals | SingleAnimationFillMode | String;
 
-export type AnimationIterationCountProperty = Globals | "infinite" | string | number;
+export type AnimationIterationCountProperty = Globals | "infinite" | String | Number;
 
-export type AnimationNameProperty = Globals | "none" | string;
+export type AnimationNameProperty = Globals | "none" | String;
 
-export type AnimationPlayStateProperty = Globals | "paused" | "running" | string;
+export type AnimationPlayStateProperty = Globals | "paused" | "running" | String;
 
-export type AnimationTimingFunctionProperty = Globals | TimingFunction | string;
+export type AnimationTimingFunctionProperty = Globals | TimingFunction | String;
 
 export type AppearanceProperty = Globals | CompatAuto | "button" | "menulist-button" | "none" | "textfield";
 
-export type AspectRatioProperty = Globals | "auto" | string;
+export type AspectRatioProperty = Globals | "auto" | String;
 
-export type BackdropFilterProperty = Globals | "none" | string;
+export type BackdropFilterProperty = Globals | "none" | String;
 
 export type BackfaceVisibilityProperty = Globals | "hidden" | "visible";
 
-export type BackgroundProperty<TLength> = Globals | FinalBgLayer<TLength> | string;
+export type BackgroundProperty<TLength> = Globals | FinalBgLayer<TLength> | String;
 
-export type BackgroundAttachmentProperty = Globals | Attachment | string;
+export type BackgroundAttachmentProperty = Globals | Attachment | String;
 
-export type BackgroundBlendModeProperty = Globals | BlendMode | string;
+export type BackgroundBlendModeProperty = Globals | BlendMode | String;
 
-export type BackgroundClipProperty = Globals | Box | string;
+export type BackgroundClipProperty = Globals | Box | String;
 
 export type BackgroundColorProperty = Globals | Color;
 
-export type BackgroundImageProperty = Globals | "none" | string;
+export type BackgroundImageProperty = Globals | "none" | String;
 
-export type BackgroundOriginProperty = Globals | Box | string;
+export type BackgroundOriginProperty = Globals | Box | String;
 
-export type BackgroundPositionProperty<TLength> = Globals | BgPosition<TLength> | string;
+export type BackgroundPositionProperty<TLength> = Globals | BgPosition<TLength> | String;
 
-export type BackgroundPositionXProperty<TLength> = Globals | TLength | "center" | "left" | "right" | "x-end" | "x-start" | string;
+export type BackgroundPositionXProperty<TLength> = Globals | TLength | "center" | "left" | "right" | "x-end" | "x-start" | String;
 
-export type BackgroundPositionYProperty<TLength> = Globals | TLength | "bottom" | "center" | "top" | "y-end" | "y-start" | string;
+export type BackgroundPositionYProperty<TLength> = Globals | TLength | "bottom" | "center" | "top" | "y-end" | "y-start" | String;
 
-export type BackgroundRepeatProperty = Globals | RepeatStyle | string;
+export type BackgroundRepeatProperty = Globals | RepeatStyle | String;
 
-export type BackgroundSizeProperty<TLength> = Globals | BgSize<TLength> | string;
+export type BackgroundSizeProperty<TLength> = Globals | BgSize<TLength> | String;
 
-export type BlockOverflowProperty = Globals | "clip" | "ellipsis" | string;
+export type BlockOverflowProperty = Globals | "clip" | "ellipsis" | String;
 
-export type BlockSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type BlockSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
-export type BorderProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
-export type BorderBlockProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderBlockProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
-export type BorderBlockColorProperty = Globals | Color | string;
+export type BorderBlockColorProperty = Globals | Color | String;
 
-export type BorderBlockEndProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderBlockEndProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderBlockEndColorProperty = Globals | Color;
 
@@ -35269,7 +35269,7 @@ export type BorderBlockEndStyleProperty = Globals | LineStyle;
 
 export type BorderBlockEndWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderBlockStartProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderBlockStartProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderBlockStartColorProperty = Globals | Color;
 
@@ -35281,13 +35281,13 @@ export type BorderBlockStyleProperty = Globals | LineStyle;
 
 export type BorderBlockWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderBottomProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderBottomProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderBottomColorProperty = Globals | Color;
 
-export type BorderBottomLeftRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderBottomLeftRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderBottomRightRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderBottomRightRadiusProperty<TLength> = Globals | TLength | String;
 
 export type BorderBottomStyleProperty = Globals | LineStyle;
 
@@ -35295,29 +35295,29 @@ export type BorderBottomWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
 export type BorderCollapseProperty = Globals | "collapse" | "separate";
 
-export type BorderColorProperty = Globals | Color | string;
+export type BorderColorProperty = Globals | Color | String;
 
-export type BorderEndEndRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderEndEndRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderEndStartRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderEndStartRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderImageProperty = Globals | "none" | "repeat" | "round" | "space" | "stretch" | string | number;
+export type BorderImageProperty = Globals | "none" | "repeat" | "round" | "space" | "stretch" | String | Number;
 
-export type BorderImageOutsetProperty<TLength> = Globals | TLength | string | number;
+export type BorderImageOutsetProperty<TLength> = Globals | TLength | String | Number;
 
-export type BorderImageRepeatProperty = Globals | "repeat" | "round" | "space" | "stretch" | string;
+export type BorderImageRepeatProperty = Globals | "repeat" | "round" | "space" | "stretch" | String;
 
-export type BorderImageSliceProperty = Globals | string | number;
+export type BorderImageSliceProperty = Globals | String | Number;
 
-export type BorderImageSourceProperty = Globals | "none" | string;
+export type BorderImageSourceProperty = Globals | "none" | String;
 
-export type BorderImageWidthProperty<TLength> = Globals | TLength | "auto" | string | number;
+export type BorderImageWidthProperty<TLength> = Globals | TLength | "auto" | String | Number;
 
-export type BorderInlineProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderInlineProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
-export type BorderInlineColorProperty = Globals | Color | string;
+export type BorderInlineColorProperty = Globals | Color | String;
 
-export type BorderInlineEndProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderInlineEndProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderInlineEndColorProperty = Globals | Color;
 
@@ -35325,7 +35325,7 @@ export type BorderInlineEndStyleProperty = Globals | LineStyle;
 
 export type BorderInlineEndWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderInlineStartProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderInlineStartProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderInlineStartColorProperty = Globals | Color;
 
@@ -35337,7 +35337,7 @@ export type BorderInlineStyleProperty = Globals | LineStyle;
 
 export type BorderInlineWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderLeftProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderLeftProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderLeftColorProperty = Globals | Color;
 
@@ -35345,9 +35345,9 @@ export type BorderLeftStyleProperty = Globals | LineStyle;
 
 export type BorderLeftWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderRightProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderRightProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderRightColorProperty = Globals | Color;
 
@@ -35355,29 +35355,29 @@ export type BorderRightStyleProperty = Globals | LineStyle;
 
 export type BorderRightWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderSpacingProperty<TLength> = Globals | TLength | string;
+export type BorderSpacingProperty<TLength> = Globals | TLength | String;
 
-export type BorderStartEndRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderStartEndRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderStartStartRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderStartStartRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderStyleProperty = Globals | LineStyle | string;
+export type BorderStyleProperty = Globals | LineStyle | String;
 
-export type BorderTopProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type BorderTopProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type BorderTopColorProperty = Globals | Color;
 
-export type BorderTopLeftRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderTopLeftRadiusProperty<TLength> = Globals | TLength | String;
 
-export type BorderTopRightRadiusProperty<TLength> = Globals | TLength | string;
+export type BorderTopRightRadiusProperty<TLength> = Globals | TLength | String;
 
 export type BorderTopStyleProperty = Globals | LineStyle;
 
 export type BorderTopWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type BorderWidthProperty<TLength> = Globals | LineWidth<TLength> | string;
+export type BorderWidthProperty<TLength> = Globals | LineWidth<TLength> | String;
 
-export type BottomProperty<TLength> = Globals | TLength | "auto" | string;
+export type BottomProperty<TLength> = Globals | TLength | "auto" | String;
 
 export type BoxAlignProperty = Globals | "baseline" | "center" | "end" | "start" | "stretch";
 
@@ -35391,7 +35391,7 @@ export type BoxOrientProperty = Globals | "block-axis" | "horizontal" | "inherit
 
 export type BoxPackProperty = Globals | "center" | "end" | "justify" | "start";
 
-export type BoxShadowProperty = Globals | "none" | string;
+export type BoxShadowProperty = Globals | "none" | String;
 
 export type BoxSizingProperty = Globals | "border-box" | "content-box";
 
@@ -35437,43 +35437,43 @@ export type CaretColorProperty = Globals | Color | "auto";
 
 export type ClearProperty = Globals | "both" | "inline-end" | "inline-start" | "left" | "none" | "right";
 
-export type ClipProperty = Globals | "auto" | string;
+export type ClipProperty = Globals | "auto" | String;
 
-export type ClipPathProperty = Globals | GeometryBox | "none" | string;
+export type ClipPathProperty = Globals | GeometryBox | "none" | String;
 
 export type ColorProperty = Globals | Color;
 
 export type ColorAdjustProperty = Globals | "economy" | "exact";
 
-export type ColumnCountProperty = Globals | "auto" | number;
+export type ColumnCountProperty = Globals | "auto" | Number;
 
 export type ColumnFillProperty = Globals | "auto" | "balance";
 
-export type ColumnGapProperty<TLength> = Globals | TLength | "normal" | string;
+export type ColumnGapProperty<TLength> = Globals | TLength | "normal" | String;
 
-export type ColumnRuleProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type ColumnRuleProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type ColumnRuleColorProperty = Globals | Color;
 
-export type ColumnRuleStyleProperty = Globals | LineStyle | string;
+export type ColumnRuleStyleProperty = Globals | LineStyle | String;
 
-export type ColumnRuleWidthProperty<TLength> = Globals | LineWidth<TLength> | string;
+export type ColumnRuleWidthProperty<TLength> = Globals | LineWidth<TLength> | String;
 
 export type ColumnSpanProperty = Globals | "all" | "none";
 
 export type ColumnWidthProperty<TLength> = Globals | TLength | "auto";
 
-export type ColumnsProperty<TLength> = Globals | TLength | "auto" | string | number;
+export type ColumnsProperty<TLength> = Globals | TLength | "auto" | String | Number;
 
-export type ContainProperty = Globals | "content" | "layout" | "none" | "paint" | "size" | "strict" | "style" | string;
+export type ContainProperty = Globals | "content" | "layout" | "none" | "paint" | "size" | "strict" | "style" | String;
 
-export type ContentProperty = Globals | ContentList | "none" | "normal" | string;
+export type ContentProperty = Globals | ContentList | "none" | "normal" | String;
 
-export type CounterIncrementProperty = Globals | "none" | string;
+export type CounterIncrementProperty = Globals | "none" | String;
 
-export type CounterResetProperty = Globals | "none" | string;
+export type CounterResetProperty = Globals | "none" | String;
 
-export type CounterSetProperty = Globals | "none" | string;
+export type CounterSetProperty = Globals | "none" | String;
 
 export type CursorProperty =
   | Globals
@@ -35515,49 +35515,49 @@ export type CursorProperty =
   | "wait"
   | "zoom-in"
   | "zoom-out"
-  | string;
+  | String;
 
 export type DirectionProperty = Globals | "ltr" | "rtl";
 
-export type DisplayProperty = Globals | DisplayOutside | DisplayInside | DisplayInternal | DisplayLegacy | "contents" | "list-item" | "none" | string;
+export type DisplayProperty = Globals | DisplayOutside | DisplayInside | DisplayInternal | DisplayLegacy | "contents" | "list-item" | "none" | String;
 
 export type EmptyCellsProperty = Globals | "hide" | "show";
 
-export type FilterProperty = Globals | "none" | string;
+export type FilterProperty = Globals | "none" | String;
 
-export type FlexProperty<TLength> = Globals | TLength | "auto" | "content" | "max-content" | "min-content" | "none" | string | number;
+export type FlexProperty<TLength> = Globals | TLength | "auto" | "content" | "max-content" | "min-content" | "none" | String | Number;
 
-export type FlexBasisProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "-webkit-auto" | "auto" | "content" | "max-content" | "min-content" | string;
+export type FlexBasisProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "-webkit-auto" | "auto" | "content" | "max-content" | "min-content" | String;
 
 export type FlexDirectionProperty = Globals | "column" | "column-reverse" | "row" | "row-reverse";
 
-export type FlexFlowProperty = Globals | "column" | "column-reverse" | "nowrap" | "row" | "row-reverse" | "wrap" | "wrap-reverse" | string;
+export type FlexFlowProperty = Globals | "column" | "column-reverse" | "nowrap" | "row" | "row-reverse" | "wrap" | "wrap-reverse" | String;
 
 export type FlexWrapProperty = Globals | "nowrap" | "wrap" | "wrap-reverse";
 
 export type FloatProperty = Globals | "inline-end" | "inline-start" | "left" | "none" | "right";
 
-export type FontProperty = Globals | "caption" | "icon" | "menu" | "message-box" | "small-caption" | "status-bar" | string;
+export type FontProperty = Globals | "caption" | "icon" | "menu" | "message-box" | "small-caption" | "status-bar" | String;
 
-export type FontFamilyProperty = Globals | GenericFamily | string;
+export type FontFamilyProperty = Globals | GenericFamily | String;
 
-export type FontFeatureSettingsProperty = Globals | "normal" | string;
+export type FontFeatureSettingsProperty = Globals | "normal" | String;
 
 export type FontKerningProperty = Globals | "auto" | "none" | "normal";
 
-export type FontLanguageOverrideProperty = Globals | "normal" | string;
+export type FontLanguageOverrideProperty = Globals | "normal" | String;
 
 export type FontOpticalSizingProperty = Globals | "auto" | "none";
 
-export type FontSizeProperty<TLength> = Globals | AbsoluteSize | TLength | "larger" | "smaller" | string;
+export type FontSizeProperty<TLength> = Globals | AbsoluteSize | TLength | "larger" | "smaller" | String;
 
-export type FontSizeAdjustProperty = Globals | "none" | number;
+export type FontSizeAdjustProperty = Globals | "none" | Number;
 
 export type FontStretchProperty = Globals | FontStretchAbsolute;
 
-export type FontStyleProperty = Globals | "italic" | "normal" | "oblique" | string;
+export type FontStyleProperty = Globals | "italic" | "normal" | "oblique" | String;
 
-export type FontSynthesisProperty = Globals | "none" | "style" | "weight" | string;
+export type FontSynthesisProperty = Globals | "none" | "style" | "weight" | String;
 
 export type FontVariantProperty =
   | Globals
@@ -35590,13 +35590,13 @@ export type FontVariantProperty =
   | "tabular-nums"
   | "titling-caps"
   | "unicase"
-  | string;
+  | String;
 
-export type FontVariantAlternatesProperty = Globals | "historical-forms" | "normal" | string;
+export type FontVariantAlternatesProperty = Globals | "historical-forms" | "normal" | String;
 
 export type FontVariantCapsProperty = Globals | "all-petite-caps" | "all-small-caps" | "normal" | "petite-caps" | "small-caps" | "titling-caps" | "unicase";
 
-export type FontVariantEastAsianProperty = Globals | EastAsianVariantValues | "full-width" | "normal" | "proportional-width" | "ruby" | string;
+export type FontVariantEastAsianProperty = Globals | EastAsianVariantValues | "full-width" | "normal" | "proportional-width" | "ruby" | String;
 
 export type FontVariantLigaturesProperty =
   | Globals
@@ -35610,7 +35610,7 @@ export type FontVariantLigaturesProperty =
   | "no-historical-ligatures"
   | "none"
   | "normal"
-  | string;
+  | String;
 
 export type FontVariantNumericProperty =
   | Globals
@@ -35623,169 +35623,169 @@ export type FontVariantNumericProperty =
   | "slashed-zero"
   | "stacked-fractions"
   | "tabular-nums"
-  | string;
+  | String;
 
 export type FontVariantPositionProperty = Globals | "normal" | "sub" | "super";
 
-export type FontVariationSettingsProperty = Globals | "normal" | string;
+export type FontVariationSettingsProperty = Globals | "normal" | String;
 
 export type FontWeightProperty = Globals | FontWeightAbsolute | "bolder" | "lighter";
 
-export type GapProperty<TLength> = Globals | TLength | "normal" | string;
+export type GapProperty<TLength> = Globals | TLength | "normal" | String;
 
-export type GridProperty = Globals | "none" | string;
+export type GridProperty = Globals | "none" | String;
 
-export type GridAreaProperty = Globals | GridLine | string;
+export type GridAreaProperty = Globals | GridLine | String;
 
-export type GridAutoColumnsProperty<TLength> = Globals | TrackBreadth<TLength> | string;
+export type GridAutoColumnsProperty<TLength> = Globals | TrackBreadth<TLength> | String;
 
-export type GridAutoFlowProperty = Globals | "column" | "dense" | "row" | string;
+export type GridAutoFlowProperty = Globals | "column" | "dense" | "row" | String;
 
-export type GridAutoRowsProperty<TLength> = Globals | TrackBreadth<TLength> | string;
+export type GridAutoRowsProperty<TLength> = Globals | TrackBreadth<TLength> | String;
 
-export type GridColumnProperty = Globals | GridLine | string;
+export type GridColumnProperty = Globals | GridLine | String;
 
 export type GridColumnEndProperty = Globals | GridLine;
 
-export type GridColumnGapProperty<TLength> = Globals | TLength | string;
+export type GridColumnGapProperty<TLength> = Globals | TLength | String;
 
 export type GridColumnStartProperty = Globals | GridLine;
 
-export type GridGapProperty<TLength> = Globals | TLength | string;
+export type GridGapProperty<TLength> = Globals | TLength | String;
 
-export type GridRowProperty = Globals | GridLine | string;
+export type GridRowProperty = Globals | GridLine | String;
 
 export type GridRowEndProperty = Globals | GridLine;
 
-export type GridRowGapProperty<TLength> = Globals | TLength | string;
+export type GridRowGapProperty<TLength> = Globals | TLength | String;
 
 export type GridRowStartProperty = Globals | GridLine;
 
-export type GridTemplateProperty = Globals | "none" | string;
+export type GridTemplateProperty = Globals | "none" | String;
 
-export type GridTemplateAreasProperty = Globals | "none" | string;
+export type GridTemplateAreasProperty = Globals | "none" | String;
 
-export type GridTemplateColumnsProperty<TLength> = Globals | TrackBreadth<TLength> | "none" | "subgrid" | string;
+export type GridTemplateColumnsProperty<TLength> = Globals | TrackBreadth<TLength> | "none" | "subgrid" | String;
 
-export type GridTemplateRowsProperty<TLength> = Globals | TrackBreadth<TLength> | "none" | "subgrid" | string;
+export type GridTemplateRowsProperty<TLength> = Globals | TrackBreadth<TLength> | "none" | "subgrid" | String;
 
-export type HangingPunctuationProperty = Globals | "allow-end" | "first" | "force-end" | "last" | "none" | string;
+export type HangingPunctuationProperty = Globals | "allow-end" | "first" | "force-end" | "last" | "none" | String;
 
-export type HeightProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type HeightProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
 export type HyphensProperty = Globals | "auto" | "manual" | "none";
 
-export type ImageOrientationProperty = Globals | "flip" | "from-image" | string;
+export type ImageOrientationProperty = Globals | "flip" | "from-image" | String;
 
 export type ImageRenderingProperty = Globals | "-moz-crisp-edges" | "-webkit-optimize-contrast" | "auto" | "crisp-edges" | "pixelated";
 
-export type ImageResolutionProperty = Globals | "from-image" | string;
+export type ImageResolutionProperty = Globals | "from-image" | String;
 
 export type ImeModeProperty = Globals | "active" | "auto" | "disabled" | "inactive" | "normal";
 
-export type InitialLetterProperty = Globals | "normal" | string | number;
+export type InitialLetterProperty = Globals | "normal" | String | Number;
 
-export type InlineSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type InlineSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
-export type InsetProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type InsetBlockProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetBlockProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type InsetBlockEndProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetBlockEndProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type InsetBlockStartProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetBlockStartProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type InsetInlineProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetInlineProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type InsetInlineEndProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetInlineEndProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type InsetInlineStartProperty<TLength> = Globals | TLength | "auto" | string;
+export type InsetInlineStartProperty<TLength> = Globals | TLength | "auto" | String;
 
 export type IsolationProperty = Globals | "auto" | "isolate";
 
-export type JustifyContentProperty = Globals | ContentDistribution | ContentPosition | "left" | "normal" | "right" | string;
+export type JustifyContentProperty = Globals | ContentDistribution | ContentPosition | "left" | "normal" | "right" | String;
 
-export type JustifyItemsProperty = Globals | SelfPosition | "baseline" | "left" | "legacy" | "normal" | "right" | "stretch" | string;
+export type JustifyItemsProperty = Globals | SelfPosition | "baseline" | "left" | "legacy" | "normal" | "right" | "stretch" | String;
 
-export type JustifySelfProperty = Globals | SelfPosition | "auto" | "baseline" | "left" | "normal" | "right" | "stretch" | string;
+export type JustifySelfProperty = Globals | SelfPosition | "auto" | "baseline" | "left" | "normal" | "right" | "stretch" | String;
 
-export type LeftProperty<TLength> = Globals | TLength | "auto" | string;
+export type LeftProperty<TLength> = Globals | TLength | "auto" | String;
 
 export type LetterSpacingProperty<TLength> = Globals | TLength | "normal";
 
 export type LineBreakProperty = Globals | "anywhere" | "auto" | "loose" | "normal" | "strict";
 
-export type LineClampProperty = Globals | "none" | number;
+export type LineClampProperty = Globals | "none" | Number;
 
-export type LineHeightProperty<TLength> = Globals | TLength | "normal" | string | number;
+export type LineHeightProperty<TLength> = Globals | TLength | "normal" | String | Number;
 
 export type LineHeightStepProperty<TLength> = Globals | TLength;
 
-export type ListStyleProperty = Globals | "inside" | "none" | "outside" | string;
+export type ListStyleProperty = Globals | "inside" | "none" | "outside" | String;
 
-export type ListStyleImageProperty = Globals | "none" | string;
+export type ListStyleImageProperty = Globals | "none" | String;
 
 export type ListStylePositionProperty = Globals | "inside" | "outside";
 
-export type ListStyleTypeProperty = Globals | "none" | string;
+export type ListStyleTypeProperty = Globals | "none" | String;
 
-export type MarginProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginBlockProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginBlockProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginBlockEndProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginBlockEndProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginBlockStartProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginBlockStartProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginBottomProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginBottomProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginInlineProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginInlineProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginInlineEndProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginInlineEndProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginInlineStartProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginInlineStartProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginLeftProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginLeftProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginRightProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginRightProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MarginTopProperty<TLength> = Globals | TLength | "auto" | string;
+export type MarginTopProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type MaskProperty<TLength> = Globals | MaskLayer<TLength> | string;
+export type MaskProperty<TLength> = Globals | MaskLayer<TLength> | String;
 
-export type MaskBorderProperty = Globals | "alpha" | "luminance" | "none" | "repeat" | "round" | "space" | "stretch" | string | number;
+export type MaskBorderProperty = Globals | "alpha" | "luminance" | "none" | "repeat" | "round" | "space" | "stretch" | String | Number;
 
 export type MaskBorderModeProperty = Globals | "alpha" | "luminance";
 
-export type MaskBorderOutsetProperty<TLength> = Globals | TLength | string | number;
+export type MaskBorderOutsetProperty<TLength> = Globals | TLength | String | Number;
 
-export type MaskBorderRepeatProperty = Globals | "repeat" | "round" | "space" | "stretch" | string;
+export type MaskBorderRepeatProperty = Globals | "repeat" | "round" | "space" | "stretch" | String;
 
-export type MaskBorderSliceProperty = Globals | string | number;
+export type MaskBorderSliceProperty = Globals | String | Number;
 
-export type MaskBorderSourceProperty = Globals | "none" | string;
+export type MaskBorderSourceProperty = Globals | "none" | String;
 
-export type MaskBorderWidthProperty<TLength> = Globals | TLength | "auto" | string | number;
+export type MaskBorderWidthProperty<TLength> = Globals | TLength | "auto" | String | Number;
 
-export type MaskClipProperty = Globals | GeometryBox | "no-clip" | string;
+export type MaskClipProperty = Globals | GeometryBox | "no-clip" | String;
 
-export type MaskCompositeProperty = Globals | CompositingOperator | string;
+export type MaskCompositeProperty = Globals | CompositingOperator | String;
 
-export type MaskImageProperty = Globals | "none" | string;
+export type MaskImageProperty = Globals | "none" | String;
 
-export type MaskModeProperty = Globals | MaskingMode | string;
+export type MaskModeProperty = Globals | MaskingMode | String;
 
-export type MaskOriginProperty = Globals | Box | "margin-box" | string;
+export type MaskOriginProperty = Globals | Box | "margin-box" | String;
 
-export type MaskPositionProperty<TLength> = Globals | Position<TLength> | string;
+export type MaskPositionProperty<TLength> = Globals | Position<TLength> | String;
 
-export type MaskRepeatProperty = Globals | RepeatStyle | string;
+export type MaskRepeatProperty = Globals | RepeatStyle | String;
 
-export type MaskSizeProperty<TLength> = Globals | BgSize<TLength> | string;
+export type MaskSizeProperty<TLength> = Globals | BgSize<TLength> | String;
 
 export type MaskTypeProperty = Globals | "alpha" | "luminance";
 
-export type MaxBlockSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type MaxBlockSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
 export type MaxHeightProperty<TLength> =
   | Globals
@@ -35797,11 +35797,11 @@ export type MaxHeightProperty<TLength> =
   | "auto"
   | "max-content"
   | "min-content"
-  | string;
+  | String;
 
-export type MaxInlineSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type MaxInlineSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
-export type MaxLinesProperty = Globals | "none" | number;
+export type MaxLinesProperty = Globals | "none" | Number;
 
 export type MaxWidthProperty<TLength> =
   | Globals
@@ -35814,9 +35814,9 @@ export type MaxWidthProperty<TLength> =
   | "intrinsic"
   | "max-content"
   | "min-content"
-  | string;
+  | String;
 
-export type MinBlockSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type MinBlockSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
 export type MinHeightProperty<TLength> =
   | Globals
@@ -35828,9 +35828,9 @@ export type MinHeightProperty<TLength> =
   | "auto"
   | "max-content"
   | "min-content"
-  | string;
+  | String;
 
-export type MinInlineSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | string;
+export type MinInlineSizeProperty<TLength> = Globals | TLength | "-moz-max-content" | "-moz-min-content" | "auto" | "max-content" | "min-content" | String;
 
 export type MinWidthProperty<TLength> =
   | Globals
@@ -35844,17 +35844,17 @@ export type MinWidthProperty<TLength> =
   | "max-content"
   | "min-content"
   | "min-intrinsic"
-  | string;
+  | String;
 
 export type MixBlendModeProperty = Globals | BlendMode;
 
-export type OffsetProperty<TLength> = Globals | Position<TLength> | GeometryBox | "auto" | "none" | string;
+export type OffsetProperty<TLength> = Globals | Position<TLength> | GeometryBox | "auto" | "none" | String;
 
-export type OffsetDistanceProperty<TLength> = Globals | TLength | string;
+export type OffsetDistanceProperty<TLength> = Globals | TLength | String;
 
-export type OffsetPathProperty = Globals | GeometryBox | "none" | string;
+export type OffsetPathProperty = Globals | GeometryBox | "none" | String;
 
-export type OffsetRotateProperty = Globals | "auto" | "reverse" | string;
+export type OffsetRotateProperty = Globals | "auto" | "reverse" | String;
 
 export type ObjectFitProperty = Globals | "contain" | "cover" | "fill" | "none" | "scale-down";
 
@@ -35862,19 +35862,19 @@ export type ObjectPositionProperty<TLength> = Globals | Position<TLength>;
 
 export type OffsetAnchorProperty<TLength> = Globals | Position<TLength> | "auto";
 
-export type OpacityProperty = Globals | string | number;
+export type OpacityProperty = Globals | String | Number;
 
-export type OutlineProperty<TLength> = Globals | Color | LineStyle | LineWidth<TLength> | "auto" | "invert" | string;
+export type OutlineProperty<TLength> = Globals | Color | LineStyle | LineWidth<TLength> | "auto" | "invert" | String;
 
 export type OutlineColorProperty = Globals | Color | "invert";
 
 export type OutlineOffsetProperty<TLength> = Globals | TLength;
 
-export type OutlineStyleProperty = Globals | LineStyle | "auto" | string;
+export type OutlineStyleProperty = Globals | LineStyle | "auto" | String;
 
 export type OutlineWidthProperty<TLength> = Globals | LineWidth<TLength>;
 
-export type OverflowProperty = Globals | "auto" | "hidden" | "scroll" | "visible" | string;
+export type OverflowProperty = Globals | "auto" | "hidden" | "scroll" | "visible" | String;
 
 export type OverflowAnchorProperty = Globals | "auto" | "none";
 
@@ -35890,7 +35890,7 @@ export type OverflowXProperty = Globals | "auto" | "hidden" | "scroll" | "visibl
 
 export type OverflowYProperty = Globals | "auto" | "hidden" | "scroll" | "visible";
 
-export type OverscrollBehaviorProperty = Globals | "auto" | "contain" | "none" | string;
+export type OverscrollBehaviorProperty = Globals | "auto" | "contain" | "none" | String;
 
 export type OverscrollBehaviorBlockProperty = Globals | "auto" | "contain" | "none";
 
@@ -35900,27 +35900,27 @@ export type OverscrollBehaviorXProperty = Globals | "auto" | "contain" | "none";
 
 export type OverscrollBehaviorYProperty = Globals | "auto" | "contain" | "none";
 
-export type PaddingProperty<TLength> = Globals | TLength | string;
+export type PaddingProperty<TLength> = Globals | TLength | String;
 
-export type PaddingBlockProperty<TLength> = Globals | TLength | string;
+export type PaddingBlockProperty<TLength> = Globals | TLength | String;
 
-export type PaddingBlockEndProperty<TLength> = Globals | TLength | string;
+export type PaddingBlockEndProperty<TLength> = Globals | TLength | String;
 
-export type PaddingBlockStartProperty<TLength> = Globals | TLength | string;
+export type PaddingBlockStartProperty<TLength> = Globals | TLength | String;
 
-export type PaddingBottomProperty<TLength> = Globals | TLength | string;
+export type PaddingBottomProperty<TLength> = Globals | TLength | String;
 
-export type PaddingInlineProperty<TLength> = Globals | TLength | string;
+export type PaddingInlineProperty<TLength> = Globals | TLength | String;
 
-export type PaddingInlineEndProperty<TLength> = Globals | TLength | string;
+export type PaddingInlineEndProperty<TLength> = Globals | TLength | String;
 
-export type PaddingInlineStartProperty<TLength> = Globals | TLength | string;
+export type PaddingInlineStartProperty<TLength> = Globals | TLength | String;
 
-export type PaddingLeftProperty<TLength> = Globals | TLength | string;
+export type PaddingLeftProperty<TLength> = Globals | TLength | String;
 
-export type PaddingRightProperty<TLength> = Globals | TLength | string;
+export type PaddingRightProperty<TLength> = Globals | TLength | String;
 
-export type PaddingTopProperty<TLength> = Globals | TLength | string;
+export type PaddingTopProperty<TLength> = Globals | TLength | String;
 
 export type PageBreakAfterProperty = Globals | "always" | "auto" | "avoid" | "left" | "recto" | "right" | "verso";
 
@@ -35928,31 +35928,31 @@ export type PageBreakBeforeProperty = Globals | "always" | "auto" | "avoid" | "l
 
 export type PageBreakInsideProperty = Globals | "auto" | "avoid";
 
-export type PaintOrderProperty = Globals | "fill" | "markers" | "normal" | "stroke" | string;
+export type PaintOrderProperty = Globals | "fill" | "markers" | "normal" | "stroke" | String;
 
 export type PerspectiveProperty<TLength> = Globals | TLength | "none";
 
 export type PerspectiveOriginProperty<TLength> = Globals | Position<TLength>;
 
-export type PlaceContentProperty = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | string;
+export type PlaceContentProperty = Globals | ContentDistribution | ContentPosition | "baseline" | "normal" | String;
 
-export type PlaceItemsProperty = Globals | SelfPosition | "baseline" | "normal" | "stretch" | string;
+export type PlaceItemsProperty = Globals | SelfPosition | "baseline" | "normal" | "stretch" | String;
 
-export type PlaceSelfProperty = Globals | SelfPosition | "auto" | "baseline" | "normal" | "stretch" | string;
+export type PlaceSelfProperty = Globals | SelfPosition | "auto" | "baseline" | "normal" | "stretch" | String;
 
 export type PointerEventsProperty = Globals | "all" | "auto" | "fill" | "inherit" | "none" | "painted" | "stroke" | "visible" | "visibleFill" | "visiblePainted" | "visibleStroke";
 
 export type PositionProperty = Globals | "-webkit-sticky" | "absolute" | "fixed" | "relative" | "static" | "sticky";
 
-export type QuotesProperty = Globals | "auto" | "none" | string;
+export type QuotesProperty = Globals | "auto" | "none" | String;
 
 export type ResizeProperty = Globals | "block" | "both" | "horizontal" | "inline" | "none" | "vertical";
 
-export type RightProperty<TLength> = Globals | TLength | "auto" | string;
+export type RightProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type RotateProperty = Globals | "none" | string;
+export type RotateProperty = Globals | "none" | String;
 
-export type RowGapProperty<TLength> = Globals | TLength | "normal" | string;
+export type RowGapProperty<TLength> = Globals | TLength | "normal" | String;
 
 export type RubyAlignProperty = Globals | "center" | "space-around" | "space-between" | "start";
 
@@ -35960,13 +35960,13 @@ export type RubyMergeProperty = Globals | "auto" | "collapse" | "separate";
 
 export type RubyPositionProperty = Globals | "over" | "under";
 
-export type ScaleProperty = Globals | "none" | string | number;
+export type ScaleProperty = Globals | "none" | String | Number;
 
 export type ScrollBehaviorProperty = Globals | "auto" | "smooth";
 
-export type ScrollMarginProperty<TLength> = Globals | TLength | string;
+export type ScrollMarginProperty<TLength> = Globals | TLength | String;
 
-export type ScrollMarginBlockProperty<TLength> = Globals | TLength | string;
+export type ScrollMarginBlockProperty<TLength> = Globals | TLength | String;
 
 export type ScrollMarginBlockEndProperty<TLength> = Globals | TLength;
 
@@ -35974,7 +35974,7 @@ export type ScrollMarginBlockStartProperty<TLength> = Globals | TLength;
 
 export type ScrollMarginBottomProperty<TLength> = Globals | TLength;
 
-export type ScrollMarginInlineProperty<TLength> = Globals | TLength | string;
+export type ScrollMarginInlineProperty<TLength> = Globals | TLength | String;
 
 export type ScrollMarginInlineEndProperty<TLength> = Globals | TLength;
 
@@ -35986,41 +35986,41 @@ export type ScrollMarginRightProperty<TLength> = Globals | TLength;
 
 export type ScrollMarginTopProperty<TLength> = Globals | TLength;
 
-export type ScrollPaddingProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingBlockProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingBlockProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingBlockEndProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingBlockEndProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingBlockStartProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingBlockStartProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingBottomProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingBottomProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingInlineProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingInlineProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingInlineEndProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingInlineEndProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingInlineStartProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingInlineStartProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingLeftProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingLeftProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingRightProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingRightProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollPaddingTopProperty<TLength> = Globals | TLength | "auto" | string;
+export type ScrollPaddingTopProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type ScrollSnapAlignProperty = Globals | "center" | "end" | "none" | "start" | string;
+export type ScrollSnapAlignProperty = Globals | "center" | "end" | "none" | "start" | String;
 
-export type ScrollSnapCoordinateProperty<TLength> = Globals | Position<TLength> | "none" | string;
+export type ScrollSnapCoordinateProperty<TLength> = Globals | Position<TLength> | "none" | String;
 
 export type ScrollSnapDestinationProperty<TLength> = Globals | Position<TLength>;
 
-export type ScrollSnapPointsXProperty = Globals | "none" | string;
+export type ScrollSnapPointsXProperty = Globals | "none" | String;
 
-export type ScrollSnapPointsYProperty = Globals | "none" | string;
+export type ScrollSnapPointsYProperty = Globals | "none" | String;
 
 export type ScrollSnapStopProperty = Globals | "always" | "normal";
 
-export type ScrollSnapTypeProperty = Globals | "block" | "both" | "inline" | "none" | "x" | "y" | string;
+export type ScrollSnapTypeProperty = Globals | "block" | "both" | "inline" | "none" | "x" | "y" | String;
 
 export type ScrollSnapTypeXProperty = Globals | "mandatory" | "none" | "proximity";
 
@@ -36032,13 +36032,13 @@ export type MsScrollbarTrackColorProperty = Globals | Color;
 
 export type ScrollbarWidthProperty = Globals | "auto" | "none" | "thin";
 
-export type ShapeImageThresholdProperty = Globals | string | number;
+export type ShapeImageThresholdProperty = Globals | String | Number;
 
-export type ShapeMarginProperty<TLength> = Globals | TLength | string;
+export type ShapeMarginProperty<TLength> = Globals | TLength | String;
 
-export type ShapeOutsideProperty = Globals | Box | "margin-box" | "none" | string;
+export type ShapeOutsideProperty = Globals | Box | "margin-box" | "none" | String;
 
-export type TabSizeProperty<TLength> = Globals | TLength | number;
+export type TabSizeProperty<TLength> = Globals | TLength | Number;
 
 export type TableLayoutProperty = Globals | "auto" | "fixed";
 
@@ -36046,7 +36046,7 @@ export type TextAlignProperty = Globals | "center" | "end" | "justify" | "left" 
 
 export type TextAlignLastProperty = Globals | "auto" | "center" | "end" | "justify" | "left" | "right" | "start";
 
-export type TextCombineUprightProperty = Globals | "all" | "digits" | "none" | string;
+export type TextCombineUprightProperty = Globals | "all" | "digits" | "none" | String;
 
 export type TextDecorationProperty<TLength> =
   | Globals
@@ -36066,47 +36066,47 @@ export type TextDecorationProperty<TLength> =
   | "spelling-error"
   | "underline"
   | "wavy"
-  | string;
+  | String;
 
 export type TextDecorationColorProperty = Globals | Color;
 
-export type TextDecorationLineProperty = Globals | "blink" | "grammar-error" | "line-through" | "none" | "overline" | "spelling-error" | "underline" | string;
+export type TextDecorationLineProperty = Globals | "blink" | "grammar-error" | "line-through" | "none" | "overline" | "spelling-error" | "underline" | String;
 
-export type TextDecorationSkipProperty = Globals | "box-decoration" | "edges" | "leading-spaces" | "none" | "objects" | "spaces" | "trailing-spaces" | string;
+export type TextDecorationSkipProperty = Globals | "box-decoration" | "edges" | "leading-spaces" | "none" | "objects" | "spaces" | "trailing-spaces" | String;
 
 export type TextDecorationSkipInkProperty = Globals | "all" | "auto" | "none";
 
 export type TextDecorationStyleProperty = Globals | "dashed" | "dotted" | "double" | "solid" | "wavy";
 
-export type TextDecorationThicknessProperty<TLength> = Globals | TLength | "auto" | "from-font" | string;
+export type TextDecorationThicknessProperty<TLength> = Globals | TLength | "auto" | "from-font" | String;
 
-export type TextEmphasisProperty = Globals | Color | "circle" | "dot" | "double-circle" | "filled" | "none" | "open" | "sesame" | "triangle" | string;
+export type TextEmphasisProperty = Globals | Color | "circle" | "dot" | "double-circle" | "filled" | "none" | "open" | "sesame" | "triangle" | String;
 
 export type TextEmphasisColorProperty = Globals | Color;
 
-export type TextEmphasisStyleProperty = Globals | "circle" | "dot" | "double-circle" | "filled" | "none" | "open" | "sesame" | "triangle" | string;
+export type TextEmphasisStyleProperty = Globals | "circle" | "dot" | "double-circle" | "filled" | "none" | "open" | "sesame" | "triangle" | String;
 
-export type TextIndentProperty<TLength> = Globals | TLength | string;
+export type TextIndentProperty<TLength> = Globals | TLength | String;
 
 export type TextJustifyProperty = Globals | "auto" | "inter-character" | "inter-word" | "none";
 
 export type TextOrientationProperty = Globals | "mixed" | "sideways" | "upright";
 
-export type TextOverflowProperty = Globals | "clip" | "ellipsis" | string;
+export type TextOverflowProperty = Globals | "clip" | "ellipsis" | String;
 
 export type TextRenderingProperty = Globals | "auto" | "geometricPrecision" | "optimizeLegibility" | "optimizeSpeed";
 
-export type TextShadowProperty = Globals | "none" | string;
+export type TextShadowProperty = Globals | "none" | String;
 
-export type TextSizeAdjustProperty = Globals | "auto" | "none" | string;
+export type TextSizeAdjustProperty = Globals | "auto" | "none" | String;
 
 export type TextTransformProperty = Globals | "capitalize" | "full-size-kana" | "full-width" | "lowercase" | "none" | "uppercase";
 
-export type TextUnderlineOffsetProperty<TLength> = Globals | TLength | "auto" | string;
+export type TextUnderlineOffsetProperty<TLength> = Globals | TLength | "auto" | String;
 
-export type TextUnderlinePositionProperty = Globals | "auto" | "from-font" | "left" | "right" | "under" | string;
+export type TextUnderlinePositionProperty = Globals | "auto" | "from-font" | "left" | "right" | "under" | String;
 
-export type TopProperty<TLength> = Globals | TLength | "auto" | string;
+export type TopProperty<TLength> = Globals | TLength | "auto" | String;
 
 export type TouchActionProperty =
   | Globals
@@ -36123,23 +36123,23 @@ export type TouchActionProperty =
   | "pan-x"
   | "pan-y"
   | "pinch-zoom"
-  | string;
+  | String;
 
-export type TransformProperty = Globals | "none" | string;
+export type TransformProperty = Globals | "none" | String;
 
 export type TransformBoxProperty = Globals | "border-box" | "content-box" | "fill-box" | "stroke-box" | "view-box";
 
-export type TransformOriginProperty<TLength> = Globals | TLength | "bottom" | "center" | "left" | "right" | "top" | string;
+export type TransformOriginProperty<TLength> = Globals | TLength | "bottom" | "center" | "left" | "right" | "top" | String;
 
 export type TransformStyleProperty = Globals | "flat" | "preserve-3d";
 
-export type TransitionProperty = Globals | SingleTransition | string;
+export type TransitionProperty = Globals | SingleTransition | String;
 
-export type TransitionPropertyProperty = Globals | "all" | "none" | string;
+export type TransitionPropertyProperty = Globals | "all" | "none" | String;
 
-export type TransitionTimingFunctionProperty = Globals | TimingFunction | string;
+export type TransitionTimingFunctionProperty = Globals | TimingFunction | String;
 
-export type TranslateProperty<TLength> = Globals | TLength | "none" | string;
+export type TranslateProperty<TLength> = Globals | TLength | "none" | String;
 
 export type UnicodeBidiProperty =
   | Globals
@@ -36156,7 +36156,7 @@ export type UnicodeBidiProperty =
 
 export type UserSelectProperty = Globals | "-moz-none" | "all" | "auto" | "contain" | "element" | "none" | "text";
 
-export type VerticalAlignProperty<TLength> = Globals | TLength | "baseline" | "bottom" | "middle" | "sub" | "super" | "text-bottom" | "text-top" | "top" | string;
+export type VerticalAlignProperty<TLength> = Globals | TLength | "baseline" | "bottom" | "middle" | "sub" | "super" | "text-bottom" | "text-top" | "top" | String;
 
 export type VisibilityProperty = Globals | "collapse" | "hidden" | "visible";
 
@@ -36173,21 +36173,21 @@ export type WidthProperty<TLength> =
   | "max-content"
   | "min-content"
   | "min-intrinsic"
-  | string;
+  | String;
 
-export type WillChangeProperty = Globals | AnimateableFeature | "auto" | string;
+export type WillChangeProperty = Globals | AnimateableFeature | "auto" | String;
 
 export type WordBreakProperty = Globals | "break-all" | "break-word" | "keep-all" | "normal";
 
-export type WordSpacingProperty<TLength> = Globals | TLength | "normal" | string;
+export type WordSpacingProperty<TLength> = Globals | TLength | "normal" | String;
 
 export type WordWrapProperty = Globals | "break-word" | "normal";
 
 export type WritingModeProperty = Globals | "horizontal-tb" | "sideways-lr" | "sideways-rl" | "vertical-lr" | "vertical-rl";
 
-export type ZIndexProperty = Globals | "auto" | number;
+export type ZIndexProperty = Globals | "auto" | Number;
 
-export type ZoomProperty = Globals | "normal" | "reset" | string | number;
+export type ZoomProperty = Globals | "normal" | "reset" | String | Number;
 
 export type MozAppearanceProperty =
   | Globals
@@ -36302,33 +36302,33 @@ export type MozAppearanceProperty =
   | "treetwistyopen"
   | "treeview";
 
-export type MozBindingProperty = Globals | "none" | string;
+export type MozBindingProperty = Globals | "none" | String;
 
-export type MozBorderBottomColorsProperty = Globals | Color | "none" | string;
+export type MozBorderBottomColorsProperty = Globals | Color | "none" | String;
 
-export type MozBorderLeftColorsProperty = Globals | Color | "none" | string;
+export type MozBorderLeftColorsProperty = Globals | Color | "none" | String;
 
-export type MozBorderRightColorsProperty = Globals | Color | "none" | string;
+export type MozBorderRightColorsProperty = Globals | Color | "none" | String;
 
-export type MozBorderTopColorsProperty = Globals | Color | "none" | string;
+export type MozBorderTopColorsProperty = Globals | Color | "none" | String;
 
-export type MozContextPropertiesProperty = Globals | "fill" | "fill-opacity" | "none" | "stroke" | "stroke-opacity" | string;
+export type MozContextPropertiesProperty = Globals | "fill" | "fill-opacity" | "none" | "stroke" | "stroke-opacity" | String;
 
 export type MozFloatEdgeProperty = Globals | "border-box" | "content-box" | "margin-box" | "padding-box";
 
-export type MozImageRegionProperty = Globals | "auto" | string;
+export type MozImageRegionProperty = Globals | "auto" | String;
 
 export type MozOrientProperty = Globals | "block" | "horizontal" | "inline" | "vertical";
 
-export type MozOutlineRadiusProperty<TLength> = Globals | TLength | string;
+export type MozOutlineRadiusProperty<TLength> = Globals | TLength | String;
 
-export type MozOutlineRadiusBottomleftProperty<TLength> = Globals | TLength | string;
+export type MozOutlineRadiusBottomleftProperty<TLength> = Globals | TLength | String;
 
-export type MozOutlineRadiusBottomrightProperty<TLength> = Globals | TLength | string;
+export type MozOutlineRadiusBottomrightProperty<TLength> = Globals | TLength | String;
 
-export type MozOutlineRadiusTopleftProperty<TLength> = Globals | TLength | string;
+export type MozOutlineRadiusTopleftProperty<TLength> = Globals | TLength | String;
 
-export type MozOutlineRadiusToprightProperty<TLength> = Globals | TLength | string;
+export type MozOutlineRadiusToprightProperty<TLength> = Globals | TLength | String;
 
 export type MozStackSizingProperty = Globals | "ignore" | "stretch-to-fit";
 
@@ -36350,23 +36350,23 @@ export type MsBlockProgressionProperty = Globals | "bt" | "lr" | "rl" | "tb";
 
 export type MsContentZoomChainingProperty = Globals | "chained" | "none";
 
-export type MsContentZoomSnapProperty = Globals | "mandatory" | "none" | "proximity" | string;
+export type MsContentZoomSnapProperty = Globals | "mandatory" | "none" | "proximity" | String;
 
 export type MsContentZoomSnapTypeProperty = Globals | "mandatory" | "none" | "proximity";
 
 export type MsContentZoomingProperty = Globals | "none" | "zoom";
 
-export type MsFlowFromProperty = Globals | "none" | string;
+export type MsFlowFromProperty = Globals | "none" | String;
 
-export type MsFlowIntoProperty = Globals | "none" | string;
+export type MsFlowIntoProperty = Globals | "none" | String;
 
 export type MsHighContrastAdjustProperty = Globals | "auto" | "none";
 
-export type MsHyphenateLimitCharsProperty = Globals | "auto" | string | number;
+export type MsHyphenateLimitCharsProperty = Globals | "auto" | String | Number;
 
-export type MsHyphenateLimitLinesProperty = Globals | "no-limit" | number;
+export type MsHyphenateLimitLinesProperty = Globals | "no-limit" | Number;
 
-export type MsHyphenateLimitZoneProperty<TLength> = Globals | TLength | string;
+export type MsHyphenateLimitZoneProperty<TLength> = Globals | TLength | String;
 
 export type MsImeAlignProperty = Globals | "after" | "auto";
 
@@ -36465,43 +36465,43 @@ export type WebkitAppearanceProperty =
   | "textarea"
   | "textfield";
 
-export type WebkitBorderBeforeProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | string;
+export type WebkitBorderBeforeProperty<TLength> = Globals | LineWidth<TLength> | LineStyle | Color | String;
 
 export type WebkitBorderBeforeColorProperty = Globals | Color;
 
-export type WebkitBorderBeforeStyleProperty = Globals | LineStyle | string;
+export type WebkitBorderBeforeStyleProperty = Globals | LineStyle | String;
 
-export type WebkitBorderBeforeWidthProperty<TLength> = Globals | LineWidth<TLength> | string;
+export type WebkitBorderBeforeWidthProperty<TLength> = Globals | LineWidth<TLength> | String;
 
-export type WebkitBoxReflectProperty<TLength> = Globals | TLength | "above" | "below" | "left" | "right" | string;
+export type WebkitBoxReflectProperty<TLength> = Globals | TLength | "above" | "below" | "left" | "right" | String;
 
-export type WebkitLineClampProperty = Globals | "none" | number;
+export type WebkitLineClampProperty = Globals | "none" | Number;
 
-export type WebkitMaskProperty<TLength> = Globals | Position<TLength> | RepeatStyle | Box | "border" | "content" | "none" | "padding" | "text" | string;
+export type WebkitMaskProperty<TLength> = Globals | Position<TLength> | RepeatStyle | Box | "border" | "content" | "none" | "padding" | "text" | String;
 
-export type WebkitMaskAttachmentProperty = Globals | Attachment | string;
+export type WebkitMaskAttachmentProperty = Globals | Attachment | String;
 
-export type WebkitMaskClipProperty = Globals | Box | "border" | "content" | "padding" | "text" | string;
+export type WebkitMaskClipProperty = Globals | Box | "border" | "content" | "padding" | "text" | String;
 
-export type WebkitMaskCompositeProperty = Globals | CompositeStyle | string;
+export type WebkitMaskCompositeProperty = Globals | CompositeStyle | String;
 
-export type WebkitMaskImageProperty = Globals | "none" | string;
+export type WebkitMaskImageProperty = Globals | "none" | String;
 
-export type WebkitMaskOriginProperty = Globals | Box | "border" | "content" | "padding" | string;
+export type WebkitMaskOriginProperty = Globals | Box | "border" | "content" | "padding" | String;
 
-export type WebkitMaskPositionProperty<TLength> = Globals | Position<TLength> | string;
+export type WebkitMaskPositionProperty<TLength> = Globals | Position<TLength> | String;
 
-export type WebkitMaskPositionXProperty<TLength> = Globals | TLength | "center" | "left" | "right" | string;
+export type WebkitMaskPositionXProperty<TLength> = Globals | TLength | "center" | "left" | "right" | String;
 
-export type WebkitMaskPositionYProperty<TLength> = Globals | TLength | "bottom" | "center" | "top" | string;
+export type WebkitMaskPositionYProperty<TLength> = Globals | TLength | "bottom" | "center" | "top" | String;
 
-export type WebkitMaskRepeatProperty = Globals | RepeatStyle | string;
+export type WebkitMaskRepeatProperty = Globals | RepeatStyle | String;
 
 export type WebkitMaskRepeatXProperty = Globals | "no-repeat" | "repeat" | "round" | "space";
 
 export type WebkitMaskRepeatYProperty = Globals | "no-repeat" | "repeat" | "round" | "space";
 
-export type WebkitMaskSizeProperty<TLength> = Globals | BgSize<TLength> | string;
+export type WebkitMaskSizeProperty<TLength> = Globals | BgSize<TLength> | String;
 
 export type WebkitOverflowScrollingProperty = Globals | "auto" | "touch";
 
@@ -36509,7 +36509,7 @@ export type WebkitTapHighlightColorProperty = Globals | Color;
 
 export type WebkitTextFillColorProperty = Globals | Color;
 
-export type WebkitTextStrokeProperty<TLength> = Globals | Color | TLength | string;
+export type WebkitTextStrokeProperty<TLength> = Globals | Color | TLength | String;
 
 export type WebkitTextStrokeColorProperty = Globals | Color;
 
@@ -36534,7 +36534,7 @@ export type AlignmentBaselineProperty =
   | "text-after-edge"
   | "text-before-edge";
 
-export type BaselineShiftProperty<TLength> = Globals | TLength | "baseline" | "sub" | "super" | string;
+export type BaselineShiftProperty<TLength> = Globals | TLength | "baseline" | "sub" | "super" | String;
 
 export type ClipRuleProperty = Globals | "evenodd" | "nonzero";
 
@@ -36563,17 +36563,17 @@ export type FillRuleProperty = Globals | "evenodd" | "nonzero";
 
 export type FloodColorProperty = Globals | Color | "currentColor";
 
-export type GlyphOrientationVerticalProperty = Globals | "auto" | string | number;
+export type GlyphOrientationVerticalProperty = Globals | "auto" | String | Number;
 
 export type LightingColorProperty = Globals | Color | "currentColor";
 
-export type MarkerProperty = Globals | "none" | string;
+export type MarkerProperty = Globals | "none" | String;
 
-export type MarkerEndProperty = Globals | "none" | string;
+export type MarkerEndProperty = Globals | "none" | String;
 
-export type MarkerMidProperty = Globals | "none" | string;
+export type MarkerMidProperty = Globals | "none" | String;
 
-export type MarkerStartProperty = Globals | "none" | string;
+export type MarkerStartProperty = Globals | "none" | String;
 
 export type ShapeRenderingProperty = Globals | "auto" | "crispEdges" | "geometricPrecision" | "optimizeSpeed";
 
@@ -36583,31 +36583,31 @@ export type StrokeProperty = Globals | Paint;
 
 export type StrokeDasharrayProperty<TLength> = Globals | Dasharray<TLength> | "none";
 
-export type StrokeDashoffsetProperty<TLength> = Globals | TLength | string;
+export type StrokeDashoffsetProperty<TLength> = Globals | TLength | String;
 
 export type StrokeLinecapProperty = Globals | "butt" | "round" | "square";
 
 export type StrokeLinejoinProperty = Globals | "bevel" | "miter" | "round";
 
-export type StrokeWidthProperty<TLength> = Globals | TLength | string;
+export type StrokeWidthProperty<TLength> = Globals | TLength | String;
 
 export type TextAnchorProperty = Globals | "end" | "middle" | "start";
 
 export type VectorEffectProperty = Globals | "non-scaling-stroke" | "none";
 
-type CounterStyleRangeProperty = "auto" | "infinite" | string | number;
+type CounterStyleRangeProperty = "auto" | "infinite" | String | Number;
 
-type CounterStyleSpeakAsProperty = "auto" | "bullets" | "numbers" | "spell-out" | "words" | string;
+type CounterStyleSpeakAsProperty = "auto" | "bullets" | "Numbers" | "spell-out" | "words" | String;
 
-type CounterStyleSystemProperty = "additive" | "alphabetic" | "cyclic" | "fixed" | "numeric" | "symbolic" | string;
+type CounterStyleSystemProperty = "additive" | "alphabetic" | "cyclic" | "fixed" | "numeric" | "symbolic" | String;
 
-type FontFaceFontFeatureSettingsProperty = "normal" | string;
+type FontFaceFontFeatureSettingsProperty = "normal" | String;
 
 type FontFaceFontDisplayProperty = "auto" | "block" | "fallback" | "optional" | "swap";
 
-type FontFaceFontStretchProperty = FontStretchAbsolute | string;
+type FontFaceFontStretchProperty = FontStretchAbsolute | String;
 
-type FontFaceFontStyleProperty = "italic" | "normal" | "oblique" | string;
+type FontFaceFontStyleProperty = "italic" | "normal" | "oblique" | String;
 
 type FontFaceFontVariantProperty =
   | EastAsianVariantValues
@@ -36639,43 +36639,43 @@ type FontFaceFontVariantProperty =
   | "tabular-nums"
   | "titling-caps"
   | "unicase"
-  | string;
+  | String;
 
-type FontFaceFontVariationSettingsProperty = "normal" | string;
+type FontFaceFontVariationSettingsProperty = "normal" | String;
 
-type FontFaceFontWeightProperty = FontWeightAbsolute | string;
+type FontFaceFontWeightProperty = FontWeightAbsolute | String;
 
-type ViewportHeightProperty<TLength> = ViewportLength<TLength> | string;
+type ViewportHeightProperty<TLength> = ViewportLength<TLength> | String;
 
 type ViewportMaxHeightProperty<TLength> = ViewportLength<TLength>;
 
 type ViewportMaxWidthProperty<TLength> = ViewportLength<TLength>;
 
-type ViewportMaxZoomProperty = "auto" | string | number;
+type ViewportMaxZoomProperty = "auto" | String | Number;
 
 type ViewportMinHeightProperty<TLength> = ViewportLength<TLength>;
 
 type ViewportMinWidthProperty<TLength> = ViewportLength<TLength>;
 
-type ViewportMinZoomProperty = "auto" | string | number;
+type ViewportMinZoomProperty = "auto" | String | Number;
 
 type ViewportOrientationProperty = "auto" | "landscape" | "portrait";
 
 type ViewportUserZoomProperty = "-ms-zoom" | "fixed" | "zoom";
 
-type ViewportWidthProperty<TLength> = ViewportLength<TLength> | string;
+type ViewportWidthProperty<TLength> = ViewportLength<TLength> | String;
 
-type ViewportZoomProperty = "auto" | string | number;
+type ViewportZoomProperty = "auto" | String | Number;
 
 type AbsoluteSize = "large" | "medium" | "small" | "x-large" | "x-small" | "xx-large" | "xx-small" | "xxx-large";
 
-type AnimateableFeature = "contents" | "scroll-position" | string;
+type AnimateableFeature = "contents" | "scroll-position" | String;
 
 type Attachment = "fixed" | "local" | "scroll";
 
-type BgPosition<TLength> = TLength | "bottom" | "center" | "left" | "right" | "top" | string;
+type BgPosition<TLength> = TLength | "bottom" | "center" | "left" | "right" | "top" | String;
 
-type BgSize<TLength> = TLength | "auto" | "contain" | "cover" | string;
+type BgSize<TLength> = TLength | "auto" | "contain" | "cover" | String;
 
 type BlendMode =
   | "color"
@@ -36697,7 +36697,7 @@ type BlendMode =
 
 type Box = "border-box" | "content-box" | "padding-box";
 
-type Color = NamedColor | DeprecatedSystemColor | "currentcolor" | string;
+type Color = NamedColor | DeprecatedSystemColor | "currentcolor" | String;
 
 type CompatAuto = "checkbox" | "listbox" | "menulist" | "meter" | "progress-bar" | "push-button" | "radio" | "searchfield" | "slider-horizontal" | "square-button" | "textarea";
 
@@ -36718,13 +36718,13 @@ type CompositingOperator = "add" | "exclude" | "intersect" | "subtract";
 
 type ContentDistribution = "space-around" | "space-between" | "space-evenly" | "stretch";
 
-type ContentList = Quote | "contents" | string;
+type ContentList = Quote | "contents" | String;
 
 type ContentPosition = "center" | "end" | "flex-end" | "flex-start" | "start";
 
-type CubicBezierTimingFunction = "ease" | "ease-in" | "ease-in-out" | "ease-out" | string;
+type CubicBezierTimingFunction = "ease" | "ease-in" | "ease-in-out" | "ease-out" | String;
 
-type Dasharray<TLength> = TLength | string | number;
+type Dasharray<TLength> = TLength | String | Number;
 
 type DeprecatedSystemColor =
   | "ActiveBorder"
@@ -36778,7 +36778,7 @@ type DisplayOutside = "block" | "inline" | "run-in";
 
 type EastAsianVariantValues = "jis04" | "jis78" | "jis83" | "jis90" | "simplified" | "traditional";
 
-type FinalBgLayer<TLength> = Color | BgPosition<TLength> | RepeatStyle | Attachment | Box | "none" | string;
+type FinalBgLayer<TLength> = Color | BgPosition<TLength> | RepeatStyle | Attachment | Box | "none" | String;
 
 type FontStretchAbsolute =
   | "condensed"
@@ -36790,21 +36790,21 @@ type FontStretchAbsolute =
   | "semi-expanded"
   | "ultra-condensed"
   | "ultra-expanded"
-  | string;
+  | String;
 
-type FontWeightAbsolute = "bold" | "normal" | number;
+type FontWeightAbsolute = "bold" | "normal" | Number;
 
 type GenericFamily = "cursive" | "fantasy" | "monospace" | "sans-serif" | "serif";
 
 type GeometryBox = Box | "fill-box" | "margin-box" | "stroke-box" | "view-box";
 
-type GridLine = "auto" | string | number;
+type GridLine = "auto" | String | Number;
 
 type LineStyle = "dashed" | "dotted" | "double" | "groove" | "hidden" | "inset" | "none" | "outset" | "ridge" | "solid";
 
 type LineWidth<TLength> = TLength | "medium" | "thick" | "thin";
 
-type MaskLayer<TLength> = Position<TLength> | RepeatStyle | GeometryBox | CompositingOperator | MaskingMode | "no-clip" | "none" | string;
+type MaskLayer<TLength> = Position<TLength> | RepeatStyle | GeometryBox | CompositingOperator | MaskingMode | "no-clip" | "none" | String;
 
 type MaskingMode = "alpha" | "luminance" | "match-source";
 
@@ -36959,28 +36959,28 @@ type NamedColor =
   | "yellow"
   | "yellowgreen";
 
-type Paint = Color | "child" | "context-fill" | "context-stroke" | "none" | string;
+type Paint = Color | "child" | "context-fill" | "context-stroke" | "none" | String;
 
-type Position<TLength> = TLength | "bottom" | "center" | "left" | "right" | "top" | string;
+type Position<TLength> = TLength | "bottom" | "center" | "left" | "right" | "top" | String;
 
 type Quote = "close-quote" | "no-close-quote" | "no-open-quote" | "open-quote";
 
-type RepeatStyle = "no-repeat" | "repeat" | "repeat-x" | "repeat-y" | "round" | "space" | string;
+type RepeatStyle = "no-repeat" | "repeat" | "repeat-x" | "repeat-y" | "round" | "space" | String;
 
 type SelfPosition = "center" | "end" | "flex-end" | "flex-start" | "self-end" | "self-start" | "start";
 
-type SingleAnimation = TimingFunction | SingleAnimationDirection | SingleAnimationFillMode | "infinite" | "none" | "paused" | "running" | string | number;
+type SingleAnimation = TimingFunction | SingleAnimationDirection | SingleAnimationFillMode | "infinite" | "none" | "paused" | "running" | String | Number;
 
 type SingleAnimationDirection = "alternate" | "alternate-reverse" | "normal" | "reverse";
 
 type SingleAnimationFillMode = "backwards" | "both" | "forwards" | "none";
 
-type SingleTransition = TimingFunction | "all" | "none" | string;
+type SingleTransition = TimingFunction | "all" | "none" | String;
 
-type StepTimingFunction = "step-end" | "step-start" | string;
+type StepTimingFunction = "step-end" | "step-start" | String;
 
 type TimingFunction = CubicBezierTimingFunction | StepTimingFunction | "linear";
 
-type TrackBreadth<TLength> = TLength | "auto" | "max-content" | "min-content" | string;
+type TrackBreadth<TLength> = TLength | "auto" | "max-content" | "min-content" | String;
 
-type ViewportLength<TLength> = TLength | "auto" | string;
+type ViewportLength<TLength> = TLength | "auto" | String;
