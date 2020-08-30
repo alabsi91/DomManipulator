@@ -1,0 +1,19 @@
+{
+  "name": "selector_dom",
+  "version": "1.0.3",
+  "description": "",
+  "main": "SelectorLib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alabsi91/selector_dom.git"
+  },
+  "author": "Ahmed Alabsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alabsi91/selector_dom/issues"
+  },
+  "homepage": "https://github.com/alabsi91/selector_dom#readme"
+}
