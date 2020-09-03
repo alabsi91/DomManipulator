@@ -130,6 +130,7 @@ export interface domElement {
     */
     animate(from: CSS.Properties, to: CSS.Properties, options: AnimateOptions): void,
     scrollTo(options: ScrollToOptions): void,
+    progress(options: progressOptions): void,
 }
 
 export declare const S: (targets: String | Element) => domElement
@@ -296,6 +297,83 @@ interface ScrollToOptions {
      * **Initial value**: `0`
     */
     offsetX?: Number,
+}
+interface progressOptions {
+    /**
+     * ProgressBar value percentage
+     * 
+     * **Initial value**: `0`
+     */
+    input: Number,
+    /**
+     * Text innerHTML
+     * 
+     * **Initial value**: `Input%`
+     */
+    text?: String,
+    /**
+     * Text CSS Style object `Ex: textStyle : {fontSize: "10px"}`
+     * 
+     * **Initial value**: `none`
+     */
+    textStyle?: CSS.Properties,
+    /**
+     * Text color
+     * 
+     * **Initial value**: `#2b2b2b`
+     */
+    textColor?: CSS.Properties,
+    /**
+     * ProgressBar backgroundcolor
+     * 
+     * **Initial value**: `none`
+     */
+    backgroundcolor?: CSS.NamedColor,
+    /**
+     * ProgressBar stroke width
+     * 
+     * **Initial value**: `10`
+     */
+    strokeWidth?: Number,
+    /**
+     * ProgressBar stroke linecap
+     * 
+     * **Initial value**: `round`
+     */
+    strokeLinecap?: "butt" | "none" | "initial" | "inherit" | "round" | "revert" | "unset" | "square",
+    /**
+     * ProgressBar stroke backgroundColor
+     * 
+     * **Initial value**: `lightgrey`
+     */
+    strokeBackgroundColor?: CSS.NamedColor,
+    /**
+     * ProgressBar stroke color
+     * 
+     * Set to solid color or to gradiant color if `grade`
+     * 
+     * **Initial value**: `grade`
+     */
+    strokeColor?: CSS.NamedColor | "grade",
+    /**
+     * ProgressBar stroke gradiant first color `if strokeColor === "grade"`
+     * 
+     * **Initial value**: `red`
+     */
+    gradeColor1?: CSS.NamedColor,
+    /**
+     * ProgressBar stroke gradiant second color `if strokeColor === "grade"`
+     * 
+     * **Initial value**: `orange`
+     */
+    gradeColor2?: CSS.NamedColor,
+    /**
+     * ProgressBar fill animation
+     * 
+     * **Initial value**: `true`
+     */
+    animation?: Boolean,
+
 }
 type GlobalEventHandlersEventMap =
     "abort" |
