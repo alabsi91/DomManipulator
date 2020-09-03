@@ -697,84 +697,84 @@ domElement.prototype.scrollTo = function (options) {
 
 /**
  * inject a circle progress bar to target element
- * 
+ *
  * **Syntax** `S(target).progress(options)`
- * 
+ *
  * @param {Object} options
  * @param {Number} options.input
- * 
- * ProgressBar value percentage 
- * 
+ *
+ * ProgressBar value percentage
+ *
  * **Initial value**: `0`
- *  
+ *
  * @param {String} [options.text]
- * 
+ *
  * Text innerHTML
- * 
+ *
  * **Initial value**: `Input%`
- * 
+ *
  * @param {CssObject} [options.textStyle]
- * 
+ *
  * Text CSS Style object `Ex: textStyle : {fontSize: "10px"}`
- * 
+ *
  * **Initial value**: `none`
- * 
+ *
  * @param {String} [options.textColor]
- * 
+ *
  * Text color
- * 
+ *
  * **Initial value**: `#2b2b2b`
- * 
+ *
  * @param {String} [options.backgroundcolor]
- * 
+ *
  * ProgressBar backgroundcolor
- * 
+ *
  * **Initial value**: `none`
- * 
+ *
  * @param {Number} [options.strokeWidth]
- * 
+ *
  * ProgressBar stroke width
- * 
+ *
  * **Initial value**: `10`
- * 
+ *
  * @param {"butt" | "none" | "initial" | "inherit" | "round" | "revert" | "unset" | "square"} [options.strokeLinecap]
- * 
+ *
  * ProgressBar stroke linecap
- * 
+ *
  * **Initial value**: `round`
- * 
+ *
  * @param {String} [options.strokeBackgroundColor]
- * 
+ *
  * ProgressBar stroke backgroundColor
- * 
+ *
  * **Initial value**: `lightgrey`
- * 
+ *
  * @param {"grade"} [options.strokeColor]
- * 
+ *
  * ProgressBar stroke color
- * 
+ *
  *  Set to solid color or to gradiant color if `grade`
- * 
+ *
  * **Initial value**: `grade`
- * 
+ *
  * @param {String} [options.gradeColor1]
- * 
+ *
  * ProgressBar stroke gradiant first color `if strokeColor === "grade"`
- * 
+ *
  * **Initial value**: `red`
- * 
+ *
  * @param {String} [options.gradeColor2]
- * 
+ *
  * ProgressBar stroke gradiant second color `if strokeColor === "grade"`
- * 
+ *
  * **Initial value**: `orange`
- * 
+ *
  * @param {Boolean} [options.animation]
- * 
+ *
  * ProgressBar fill animation
- * 
+ *
  * **Initial value**: `true`
- * 
+ *
  */
 domElement.prototype.progress = function (options) {
   options = options || {};
@@ -785,11 +785,12 @@ domElement.prototype.progress = function (options) {
   options.backgroundcolor = options.backgroundcolor || "none";
   options.strokeWidth = options.strokeWidth || 10;
   options.strokeLinecap = options.strokeLinecap || "round";
-  options.strokeBackgroundColor = options.strokeBackgroundColor || "lightgrey";
+  options.strokeBackgroundColor =
+    options.strokeBackgroundColor === "grade" ? "url(#progressGardeColor)" : options.strokeBackgroundColor || "url(#progressGardeColor)";
   options.strokeColor = options.strokeColor === "grade" ? "url(#progressGardeColor)" : options.strokeColor || "url(#progressGardeColor)";
   options.gradeColor1 = options.gradeColor1 || "red";
   options.gradeColor2 = options.gradeColor2 || "orange";
-  options.animation = options.animation === undefined ? true : options.animation
+  options.animation = options.animation === undefined ? true : options.animation;
 
   const circumference = 2 * Math.PI * (100 - options.strokeWidth / 2);
   const calcProgress = circumference - (options.input * circumference) / 100;

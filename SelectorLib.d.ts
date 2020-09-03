@@ -344,9 +344,11 @@ interface progressOptions {
     /**
      * ProgressBar stroke backgroundColor
      * 
+     * Set to solid color or to gradiant color if `grade`
+     * 
      * **Initial value**: `lightgrey`
      */
-    strokeBackgroundColor?: CSS.NamedColor,
+    strokeBackgroundColor?: CSS.NamedColor | "grade",
     /**
      * ProgressBar stroke color
      * 
