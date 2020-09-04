@@ -1,5 +1,4 @@
 import "./CSSProprties";
-import { gsap } from "gsap";
 
 class domElement {
   constructor(targets) {
@@ -759,13 +758,13 @@ domElement.prototype.scrollTo = function (options) {
  *
  * @param {String} [options.gradeColor1]
  *
- * ProgressBar stroke gradiant first color `if strokeColor === "grade"`
+ * ProgressBar stroke  gradiant first color `if strokeColor === "grade"`
  *
  * **Initial value**: `red`
  *
  * @param {String} [options.gradeColor2]
  *
- * ProgressBar stroke gradiant second color `if strokeColor === "grade"`
+ * ProgressBar stroke  gradiant second color `if strokeColor === "grade"`
  *
  * **Initial value**: `orange`
  *
@@ -774,6 +773,14 @@ domElement.prototype.scrollTo = function (options) {
  * ProgressBar fill animation
  *
  * **Initial value**: `true`
+ *
+ * @param {Object} [options.animationOptions]
+ *
+ * ProgressBar fill animation options
+ *
+ *  {repeat , yoyo, yoyoDelay, yoyoDuration, delay, delayOnce, duration, ease}
+ *
+ * **Initial value**: `{ease: "cubic-bezier(0.34, 1.56, 0.64, 1)", duration: 2000, delay: 300}`
  *
  */
 domElement.prototype.progress = function (options) {
@@ -785,14 +792,16 @@ domElement.prototype.progress = function (options) {
   options.backgroundcolor = options.backgroundcolor || "none";
   options.strokeWidth = options.strokeWidth || 10;
   options.strokeLinecap = options.strokeLinecap || "round";
-  options.strokeBackgroundColor =
-    options.strokeBackgroundColor === "grade" ? "url(#progressGardeColor)" : options.strokeBackgroundColor || "url(#progressGardeColor)";
+  options.strokeBackgroundColor = options.strokeBackgroundColor || "lightgrey";
   options.strokeColor = options.strokeColor === "grade" ? "url(#progressGardeColor)" : options.strokeColor || "url(#progressGardeColor)";
   options.gradeColor1 = options.gradeColor1 || "red";
   options.gradeColor2 = options.gradeColor2 || "orange";
   options.animation = options.animation === undefined ? true : options.animation;
+  options.animationOptions = options.animationOptions || {};
+  options.cleanBeforeInject = options.cleanBeforeInject === undefined ? true : options.cleanBeforeInject;
 
-  const circumference = 2 * Math.PI * (100 - options.strokeWidth / 2);
+  const R = 100 - options.strokeWidth / 2;
+  const circumference = 2 * Math.PI * R;
   const calcProgress = circumference - (options.input * circumference) / 100;
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -820,10 +829,10 @@ domElement.prototype.progress = function (options) {
   S(circle)
     .attr("cx", "100")
     .attr("cy", "100")
-    .attr("r", 100 - options.strokeWidth / 2)
+    .attr("r", R)
     .attr("stroke", options.strokeColor)
     .attr("stroke-width", options.strokeWidth)
-    .attr("stroke-dashoffset", circumference)
+    .attr("stroke-dashoffset", options.animation ? circumference : calcProgress)
     .attr("stroke-dasharray", circumference)
     .attr("stroke-linecap", options.strokeLinecap)
     .attr("transform", "rotate(270)")
@@ -831,7 +840,7 @@ domElement.prototype.progress = function (options) {
   S(circlePg)
     .attr("cx", "100")
     .attr("cy", "100")
-    .attr("r", 100 - options.strokeWidth / 2)
+    .attr("r", R)
     .attr("fill", options.backgroundcolor)
     .attr("stroke", options.strokeBackgroundColor)
     .attr("stroke-width", options.strokeWidth);
@@ -844,9 +853,16 @@ domElement.prototype.progress = function (options) {
   svg.appendChild(circlePg);
   svg.appendChild(circle);
   svg.appendChild(txt);
+  if (options.cleanBeforeInject) this.text(" ");
   this.append(svg);
 
-  gsap.to(circle, { strokeDashoffset: calcProgress, duration: options.animation ? 2 : 0, ease: "back" });
+  if (options.animation) {
+    S(circle).animate(
+      { strokeDashoffset: circumference + "px" },
+      { strokeDashoffset: calcProgress + "px" },
+      { ease: "cubic-bezier(0.34, 1.56, 0.64, 1)", duration: 2000, delay: 300, ...options.animationOptions }
+    );
+  }
 };
 /**
  *

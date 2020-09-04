@@ -130,7 +130,7 @@ export interface domElement {
     */
     animate(from: CSS.Properties, to: CSS.Properties, options: AnimateOptions): void,
     scrollTo(options: ScrollToOptions): void,
-    progress(options: progressOptions): void,
+    progress(options: ProgressOptions): void,
 }
 
 export declare const S: (targets: String | Element) => domElement
@@ -298,7 +298,7 @@ interface ScrollToOptions {
     */
     offsetX?: Number,
 }
-interface progressOptions {
+interface ProgressOptions {
     /**
      * ProgressBar value percentage
      * 
@@ -375,6 +375,18 @@ interface progressOptions {
      * **Initial value**: `true`
      */
     animation?: Boolean,
+    /**
+     * ProgressBar fill animation options
+     * 
+     * **Initial value**: `{ease: "cubic-bezier(0.34, 1.56, 0.64, 1)", duration: 2000, delay: 300}`
+     */
+    animationOptions?: AnimateOptions,
+    /**
+     * Remove container's children before injection
+     * 
+     * **Initial value**: `true`
+     */
+    cleanBeforeInject?: Boolean,
 
 }
 type GlobalEventHandlersEventMap =
