@@ -768,6 +768,24 @@ domElement.prototype.scrollTo = function (options) {
  *
  * **Initial value**: `orange`
  *
+ * @param {Boolean} [options.useMask]
+ *
+ * Use SVG mask over progressCircle
+ *
+ * **Initial value**: `false`
+ *
+ * @param {Number} [options.maskDasharray]
+ *
+ * Mask dasharray size
+ *
+ * **Initial value**: `2`
+ *
+ * @param {"butt" | "none" | "initial" | "inherit" | "round" | "revert" | "unset" | "square"} [options.maskLinecap]
+ *
+ * Mask dasharray linecap
+ *
+ * **Initial value**: `butt`
+ *
  * @param {Boolean} [options.animation]
  *
  * ProgressBar fill animation
@@ -799,6 +817,8 @@ domElement.prototype.progress = function (options) {
   options.animation = options.animation === undefined ? true : options.animation;
   options.animationOptions = options.animationOptions || {};
   options.cleanBeforeInject = options.cleanBeforeInject === undefined ? true : options.cleanBeforeInject;
+  options.maskDasharray = options.maskDasharray || 2;
+  options.maskLinecap = options.maskLinecap || "butt";
 
   const R = 100 - options.strokeWidth / 2;
   const circumference = 2 * Math.PI * R;
@@ -808,6 +828,8 @@ domElement.prototype.progress = function (options) {
   const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
   const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
   const circlePg = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  const circleMask = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  const mask = document.createElementNS("http://www.w3.org/2000/svg", "mask");
   const gradient = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
   const stopColor1 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
   const stopColor2 = document.createElementNS("http://www.w3.org/2000/svg", "stop");
@@ -831,25 +853,42 @@ domElement.prototype.progress = function (options) {
     .attr("cy", "100")
     .attr("r", R)
     .attr("stroke", options.strokeColor)
-    .attr("stroke-width", options.strokeWidth)
-    .attr("stroke-dashoffset", options.animation ? circumference : calcProgress)
-    .attr("stroke-dasharray", circumference)
+    .attr("stroke-width", options.strokeWidth + "px")
+    .attr("stroke-dashoffset", options.animation ? circumference + "px" : calcProgress + "px")
+    .attr("stroke-dasharray", circumference + "px")
     .attr("stroke-linecap", options.strokeLinecap)
     .attr("transform", "rotate(270)")
-    .attr("transform-origin", "center");
+    .attr("transform-origin", "center")
+    .attr("mask", "url(#progressMask)");
+  S(circleMask)
+    .attr("cx", "100")
+    .attr("cy", "100")
+    .attr("r", R)
+    .attr("stroke", "white")
+    .attr("stroke-width", options.strokeWidth + "px")
+    .attr("stroke-dashoffset", "550px")
+    .attr("stroke-dasharray", options.maskDasharray + "px")
+    .attr("stroke-linecap", options.maskLinecap);
   S(circlePg)
     .attr("cx", "100")
     .attr("cy", "100")
     .attr("r", R)
     .attr("fill", options.backgroundcolor)
     .attr("stroke", options.strokeBackgroundColor)
-    .attr("stroke-width", options.strokeWidth);
+    .attr("stroke-width", options.strokeWidth + "px");
   S(gradient).attr("x1", "0%").attr("x2", "0%").attr("y1", "0%").attr("y2", "100%").attr("id", "progressGardeColor");
+  S(mask).attr("id", "progressMask");
   S(stopColor1).attr("offset", "0%").attr("stop-color", options.gradeColor1);
   S(stopColor2).attr("offset", "65%").attr("stop-color", options.gradeColor2);
-  gradient.appendChild(stopColor1);
-  gradient.appendChild(stopColor2);
-  svg.appendChild(gradient);
+  if (options.useMask) {
+    mask.appendChild(circleMask);
+    svg.appendChild(mask);
+  }
+  if (options.strokeColor === "url(#progressGardeColor)") {
+    gradient.appendChild(stopColor1);
+    gradient.appendChild(stopColor2);
+    svg.appendChild(gradient);
+  }
   svg.appendChild(circlePg);
   svg.appendChild(circle);
   svg.appendChild(txt);

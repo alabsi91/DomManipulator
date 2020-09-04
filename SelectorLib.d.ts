@@ -370,6 +370,24 @@ interface ProgressOptions {
      */
     gradeColor2?: CSS.NamedColor,
     /**
+     * Use SVG mask over progressCircle.
+     * 
+     * **Initial value**: `false`
+     */
+    useMask?: Boolean,
+    /**
+     * Mask dasharray size .
+     * 
+     * **Initial value**: `2`
+     */
+    maskDasharray?: Number,
+    /**
+     * Mask dasharray linecap.
+     * 
+     * **Initial value**: `butt`
+     */
+    maskLinecap?: "butt" | "none" | "initial" | "inherit" | "round" | "revert" | "unset" | "square",
+    /**
      * ProgressBar fill animation
      * 
      * **Initial value**: `true`
