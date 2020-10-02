@@ -16,43 +16,43 @@ export interface domElement {
      * 
      * **Syntax**: `S(targets).css({CSSPropertiy:`Value`, ...})`
     */
-    css(CSSObjectOfProprties: CSS.Properties): void,
+    css(CSSObjectOfProprties: CSS.Properties): domElement,
     /**
-     * Removes the specified CSS property from a CSS declaration block.
+     * Removes the specified CSS property or propreties from a CSS declaration block.
      * 
-     * **Syntax**: `S(targets).removeCss(propertyName)`
+     * **Syntax**: `S(targets).removeCss(propertyName | [propertyName, ...])`
     */
-    removeCss(propertyName: keyof CSS.StandardPropertiesHyphen): void,
+    removeCss(propertyName: keyof CSS.StandardPropertiesHyphen | Array<keyof CSS.StandardPropertiesHyphen>): domElement,
     /**
      * inserts nodes before the first child of node.
      * 
      * **Syntax**: `S(targets).prepend(element)`
     */
-    prepend(element: Element): void,
+    prepend(element: Element): domElement,
     /**
      * Inserts nodes after the last child of node.
      * 
      * **Syntax**: `S(targets).append(element)`
     */
-    append(element: Element): void,
+    append(element: Element): domElement,
     /**
      * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
      * 
      * **Syntax**: `S(targets).clone(deep)`
     */
-    clone(element: Boolean): void,
+    clone(deep: Boolean): Element,
     /**
      * Set Attribute for an HTML element
      * 
      * **Syntax**: `S(targets).attr(attribute, value)`
     */
-    attr(attribute: String | attributes, value: String): void,
+    attr(attribute: String | attributes, value: String): domElement,
     /**
-     * Remove Attribute from an HTML element
+     * Remove Attribute/s from an HTML element
      * 
-     * **Syntax**: `S(targets).removeAttr(attribute)`
+     * **Syntax**: `S(targets).removeAttr(attribute | [attribute, ...])`
     */
-    removeAttr(attribute: String | attributes): void,
+    removeAttr(attribute: String | CSS.HtmlAttributes | CSS.SvgAttributes | Array<CSS.HtmlAttributes> | Array<CSS.SvgAttributes>): domElement,
     /**
      * Set or Return the value attribute from an HTML element
      * 
@@ -64,31 +64,31 @@ export interface domElement {
      * 
      * **Syntax**: `S(targets).on(event, functionHandler)`
     */
-    on(event: GlobalEventHandlersEventMap, functionHandler: Function): void,
+    on(event: GlobalEventHandlersEventMap, functionHandler: Function): domElement,
     /**
      * Remove event listener from an HTML element
      * 
      * **Syntax**: `S(targets).off(event, functionHandler)`
     */
-    off(event: GlobalEventHandlersEventMap, functionHandler: Function): void,
+    off(event: GlobalEventHandlersEventMap, functionHandler: Function): domElement,
     /**
      * Remove an HTML element from document
      * 
      * **Syntax**: `S(targets).remove()`
     */
-    remove(): void,
+    remove(): domElement,
     /**
      * Blur an HTML element
      * 
      * **Syntax**: `S(targets).blur()`
     */
-    blur(): void,
+    blur(): domElement,
     /**
      * Focus an HTML element
      * 
      * **Syntax**: `S(targets).focus()`
     */
-    focus(): void,
+    focus(): domElement,
     /**
      * Get the style value of an HTML element
      * 
@@ -131,6 +131,28 @@ export interface domElement {
     animate(from: CSS.Properties, to: CSS.Properties, options: AnimateOptions): void,
     scrollTo(options: ScrollToOptions): void,
     progress(options: ProgressOptions): void,
+    keyframes(keyframes: Keyframe[] | PropertyIndexedKeyframes | null, options?: number | KeyframeAnimationOptions): Animation;
+    /**
+     * enable pan navigation on a container.
+     */
+    pan(): void;
+    /**
+     * a function to be used mostly for animations
+     * which take a number and performes a callback function every time that number is changed
+     *
+     * **Syntax** `S(target).requestFrame(options, callback)`
+     *
+     *
+     * @param {Function} callback
+     *
+     * this function will be called every time the number is changed
+     *
+     *  this function take one parameter which represent the changing number
+     *
+     * **Syntax** `function name(element, x, ...) { //... do somthing with x, ... }`
+     * 
+     */
+    requestFrame(options: requestFrameOptions, callback: Function): void,
 }
 
 export declare const S: (targets: String | Element) => domElement
@@ -138,6 +160,43 @@ export declare const S: (targets: String | Element) => domElement
 type attributes = "autocomplete" | "async" | "alt" | "class" | "contenteditable" | "dir" | "draggable" | "hidden" | "id" | "lang" | "style" | "src" | "title" | "translate" | "value";
 
 type transitionTimingFunction = "ease" | "linear" | "ease-in" | "ease-out" | "ease-in-out" | "step-start" | "step-end" | "steps(int,start|end)" | "cubic-bezier(n,n,n,n)" | "initial" | "inherit";
+
+type requestFrameEasing = "easeInSine" | "easeOutSine" | "easeInOutSine" | "easeInQuad" | "easeOutQuad" | "easeInOutQuad" | "easeInCubic" | "easeOutCubic" | "easeInOutCubic" | "easeInQuart" | "easeOutQuart" | "easeInOutQuart" | "easeInQuint" | "easeOutQuint" | "easeInOutQuint" | "easeInExpo" | "easeOutExpo" | "easeInOutExpo" | "easeInCirc" | "easeOutCirc" | "easeInOutCirc" | "easeInBack" | "easeOutBack" | "easeInOutBack" | "easeInElastic" | "easeOutElastic" | "easeInOutElastic" | "easeInBounce" | "easeOutBounce" | "easeInOutBounce";
+
+interface requestFrameOptions {
+    /**
+     * start form this number/s
+     *
+     * takes one number or array of numbers
+     * 
+     * **Initial Value** `0 | [0, 0 , ...]`
+    */
+    from?: Number | Array<number>,
+    /**
+     * end at this number/s
+     *
+     * takes one number or array of numbers
+    */
+    to: Number | Array<number>,
+    /**
+     * the duration the function will take to change the number (in milliseconds)
+     *
+     * **Initial Value** `350 ms`
+    */
+    duration?: Number,
+    /**
+     * wait time before starting (in milliseconds)
+     *
+     * **Initial Value** `0 ms`
+    */
+    delay?: Number,
+    /**
+     * Easing functions specify the rate of change of the number over time.
+     *
+     * **Initial Value** `linear`
+    */
+    easingFunction?: requestFrameEasing | Function,
+}
 
 interface AnimateOptions {
     /**
@@ -495,3 +554,22 @@ type GlobalEventHandlersEventMap =
     "volumechange" |
     "waiting" |
     "wheel"
+
+
+/**
+ * a function to be used mostly for animations
+ * which take a number and performes a callback function every time that number is changed
+ *
+ * **Syntax** `requestFrame(options, callback)`
+ *
+ *
+ * @param {Function} callback
+ *
+ * this function will be called every time the number is changed
+ *
+ *  this function take one parameter which represent the changing number
+ *
+ * **Syntax** `function name(x) { //... do somthing with x }`
+ *
+ */
+export function requestFrame(options: requestFrameOptions, callback: Function): void
