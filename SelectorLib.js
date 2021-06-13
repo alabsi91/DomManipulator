@@ -17,8 +17,6 @@ import { progress } from "./methods/progress";
 import { removeAttr } from "./methods/removeAttr";
 import { removeCss } from "./methods/removeCss";
 import { remove } from "./methods/removeEl";
-import { requestFrame } from "./methods/requestFrame";
-import { requestFrameEL } from "./methods/requestFrameEle";
 import { scrollTo } from "./methods/scrollTo";
 import { setCssVar } from "./methods/setCssVar";
 import { text } from "./methods/text";
@@ -53,7 +51,6 @@ domElement.prototype.animate = animate;
 domElement.prototype.scrollTo = scrollTo;
 domElement.prototype.progress = progress;
 domElement.prototype.pan = pan;
-domElement.prototype.requestFrame = requestFrameEL;
 domElement.prototype.keyframes = keyframes;
 
 /**
@@ -63,3 +60,4 @@ domElement.prototype.keyframes = keyframes;
 export const S = (targets) => new domElement(targets);
 
 export { requestFrame } from "./methods/requestFrame";
+export { colorToArr } from './methods/colorToRgbArray';

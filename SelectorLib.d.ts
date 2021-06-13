@@ -136,23 +136,6 @@ export interface domElement {
      * enable pan navigation on a container.
      */
     pan(): void;
-    /**
-     * a function to be used mostly for animations
-     * which take a number and performes a callback function every time that number is changed
-     *
-     * **Syntax** `S(target).requestFrame(options, callback)`
-     *
-     *
-     * @param {Function} callback
-     *
-     * this function will be called every time the number is changed
-     *
-     *  this function take one parameter which represent the changing number
-     *
-     * **Syntax** `function name(element, x, ...) { //... do somthing with x, ... }`
-     * 
-     */
-    requestFrame(options: requestFrameOptions, callback: Function): void,
 }
 
 export declare const S: (targets: String | Element) => domElement
@@ -161,7 +144,7 @@ type attributes = "autocomplete" | "async" | "alt" | "class" | "contenteditable"
 
 type transitionTimingFunction = "ease" | "linear" | "ease-in" | "ease-out" | "ease-in-out" | "step-start" | "step-end" | "steps(int,start|end)" | "cubic-bezier(n,n,n,n)" | "initial" | "inherit";
 
-type requestFrameEasing = "easeInSine" | "easeOutSine" | "easeInOutSine" | "easeInQuad" | "easeOutQuad" | "easeInOutQuad" | "easeInCubic" | "easeOutCubic" | "easeInOutCubic" | "easeInQuart" | "easeOutQuart" | "easeInOutQuart" | "easeInQuint" | "easeOutQuint" | "easeInOutQuint" | "easeInExpo" | "easeOutExpo" | "easeInOutExpo" | "easeInCirc" | "easeOutCirc" | "easeInOutCirc" | "easeInBack" | "easeOutBack" | "easeInOutBack" | "easeInElastic" | "easeOutElastic" | "easeInOutElastic" | "easeInBounce" | "easeOutBounce" | "easeInOutBounce";
+type requestFrameEasing = "linear" | "easeInSine" | "easeOutSine" | "easeInOutSine" | "easeInQuad" | "easeOutQuad" | "easeInOutQuad" | "easeInCubic" | "easeOutCubic" | "easeInOutCubic" | "easeInQuart" | "easeOutQuart" | "easeInOutQuart" | "easeInQuint" | "easeOutQuint" | "easeInOutQuint" | "easeInExpo" | "easeOutExpo" | "easeInOutExpo" | "easeInCirc" | "easeOutCirc" | "easeInOutCirc" | "easeInBack" | "easeOutBack" | "easeInOutBack" | "easeInElastic" | "easeOutElastic" | "easeInOutElastic" | "easeInBounce" | "easeOutBounce" | "easeInOutBounce";
 
 interface requestFrameOptions {
     /**
@@ -196,6 +179,32 @@ interface requestFrameOptions {
      * **Initial Value** `linear`
     */
     easingFunction?: requestFrameEasing | Function,
+    /**
+     * go back to the start point if true
+     *
+     * **Initial Value** `false`
+    */
+    yoyo?: Boolean,
+    /**
+     * the duration to go back to start point (in milliseconds)
+     *
+     * **Initial Value** `duration`
+    */
+    yoyoDuration?: Number,
+    /**
+     * wait time before starting the yoyo (in milliseconds)
+     *
+     * **Initial Value** `delay`
+    */
+    yoyoDelay?: Number,
+    /**
+     * replay count after the first play
+     * 
+     * infinite if replay === -1 
+     *
+     * **Initial Value** `0`
+    */
+    replay?: Number,
 }
 
 interface AnimateOptions {
@@ -455,9 +464,9 @@ interface ProgressOptions {
     /**
      * ProgressBar fill animation options
      * 
-     * **Initial value**: `{ease: "cubic-bezier(0.34, 1.56, 0.64, 1)", duration: 2000, delay: 300}`
+     * **Initial value**: `{easingFunction: "easeOutBack", duration: 2000, delay: 300}`
      */
-    animationOptions?: AnimateOptions,
+    animationOptions?: requestFrameOptions,
     /**
      * Remove container's children before injection
      * 
@@ -558,18 +567,30 @@ type GlobalEventHandlersEventMap =
 
 /**
  * a function to be used mostly for animations
- * which take a number and performes a callback function every time that number is changed
+ * which takes a number and performes a callback function every time that number is updated
+ * 
+ *  in modern browsers this function will match the client screen refresh rate
  *
  * **Syntax** `requestFrame(options, callback)`
  *
  *
  * @param {Function} callback
  *
- * this function will be called every time the number is changed
+ * this function will be called every time the number/s is updated
  *
- *  this function take one parameter which represent the changing number
+ * this function take parameter/s which represent the updating number/s
  *
- * **Syntax** `function name(x) { //... do somthing with x }`
+ * **Syntax** `function name(x, ...) { //... do somthing with (x , ...) }`
  *
  */
 export function requestFrame(options: requestFrameOptions, callback: Function): void
+/**
+ * takes a string of color and return an array of rgba values
+ *
+ * @param {String} color
+ *
+ * color format: rgb(r, g, b) | rgba(r, g, b, a) | hex (e.g. "#ffffff ") | color name (e.g. "red")
+ *
+ *
+ */
+export function colorToArr(color: String): Number[]
